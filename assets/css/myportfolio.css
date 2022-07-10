@@ -1,0 +1,27 @@
+*{
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+}
+@media(min-width:768px){
+    section.navpart{
+        background-color: grey;
+    }
+    a.nav-link{
+        color: white;
+    }
+}
+
+
+
+
+
+
+@media(max-width:768px){
+ section.navpart{
+        background-color: grey;
+    }
+        a.nav-link{
+        color: white;
+    }
+}
