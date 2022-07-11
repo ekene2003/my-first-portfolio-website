@@ -1,0 +1,74 @@
+/* *{
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+} */
+
+
+@media(min-width:768px){
+section.aboutme{
+    background-image: url('../images/realone.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+h1.hello{
+    color: white;
+    padding-top: 70px;
+    font-family: 'Press Start 2P', cursive;
+}
+p.text{
+     font-family: 'Press Start 2P', cursive;
+     color: white;
+     font-size: 14px;
+}
+h4.hello{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+ul.listhobby{
+    color: white;
+}
+div.card1{
+    background-color: purple;
+font-family: 'Edu VIC WA NT Beginner', cursive;
+color: white;
+}
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+section.aboutme{
+    background-image: url('../images/realone.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+h1.hello{
+    color: white;
+    padding-top: 70px;
+    font-family: 'Press Start 2P', cursive;
+}
+p.text{
+     font-family: 'Press Start 2P', cursive;
+     color: white;
+     font-size: 11px;
+}
+h4.hello{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+ul.listhobby{
+    color: white;
+}
+div.card1{
+    background-color: purple;
+font-family: 'Edu VIC WA NT Beginner', cursive;
+color: white;
+}
+}
+

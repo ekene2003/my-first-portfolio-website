@@ -56,6 +56,9 @@
     font-family: "Monoton", cursive;
     color: white;
   }
+  a.socialpart{
+    text-decoration: none;
+  }
   img.media1 {
     width: 60px !important;
     height: 60px;
@@ -164,8 +167,11 @@
     height: 50px;
     background-color: gray;
     border-color: transparent;
-    margin-left: 46%;
+    margin-left: 40%;
     font-family: "Bangers", cursive;
     margin-top: 20px;
+  }
+    a.socialpart{
+    text-decoration: none;
   }
 }
