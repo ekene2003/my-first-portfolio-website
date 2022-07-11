@@ -6,6 +6,9 @@
 
 
 @media(min-width:768px){
+nav.navstuff{
+background-color: white;
+    }
 section.aboutme{
     background-image: url('../images/realone.jpeg');
     background-size: cover;
@@ -33,7 +36,18 @@ div.card1{
 font-family: 'Edu VIC WA NT Beginner', cursive;
 color: white;
 }
+  button.moreinfo {
+    border-radius: 30px;
+    width: 180px;
+    height: 50px;
+    background-color: darkgray;
+    border-color: transparent;
+    margin-left: 800px;
+    font-family: "Bangers", cursive;
+    /* margin-top: 30px; */
+  }
 }
+
 
 
 
