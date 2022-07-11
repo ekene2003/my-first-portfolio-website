@@ -84,5 +84,15 @@ div.card1{
 font-family: 'Edu VIC WA NT Beginner', cursive;
 color: white;
 }
+ button.moreinfo {
+    border-radius: 20px;
+    width: 170px;
+    height: 50px;
+    background-color: darkgray;
+    border-color: transparent;
+    margin-left: 190px;
+    font-family: "Bangers", cursive;
+    /* margin-top: 30px; */
+  }
 }
 
