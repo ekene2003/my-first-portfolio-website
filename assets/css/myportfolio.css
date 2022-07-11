@@ -1,8 +1,6 @@
 *{
     margin-left: 0;
     margin-right: 0;
-    overflow-x:hidden;
-    overflow-y: hidden;
 }
 @media(min-width:768px){
     section.navpart{
@@ -19,6 +17,10 @@
         font-family: 'Exo', sans-serif;
         color: black;
         font-size: 20px;
+    }
+    h3.caption{
+        font-family: 'Cinzel', serif;
+        color: white;
     }
 }
 
@@ -42,5 +44,13 @@
         font-family: 'Exo', sans-serif;
         color: black;
         font-size: 18px;
+    }
+    img.mypics{
+        height: 293px;
+    }
+        h3.caption{
+        font-family: 'Cinzel', serif;
+        color: white;
+        font-weight: lighter;
     }
 }
