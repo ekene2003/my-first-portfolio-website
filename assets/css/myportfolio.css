@@ -1,112 +1,171 @@
-*{
-    margin-left: 0;
-    margin-right: 0;
-    /* overflow-x: hidden; */
+* {
+  margin-left: 0;
+  margin-right: 0;
+  /* overflow-x: hidden; */
 }
-@media(min-width:768px){
-    section.navpart{
-        background-color: grey;
-    }
-    a.nav-link{
-        color: white;
-        font-family: 'Roboto Slab', serif;
-    }
-    h1.hello{
-        font-family: 'Lobster', cursive;
-
-    }
-    a.greeting{
-        text-decoration: none;
-        color: black;
-    }
-    p.biopart{
-        font-family: 'Exo', sans-serif;
-        color: black;
-        font-size: 20px;
-    }
-    h3.caption{
-        font-family: 'Cinzel', serif;
-        color: white;
-    }
-    section.part1{
-        background-color: darkgrey;
-    }
-    section.part2{
-        background-image: url('../images/project\ background.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    a.project{
-        color: white;
-        text-decoration: none;
-        font-family: 'Bangers', cursive;
-    }
-    button.toseeproject{
-        border-radius: 40px;
-        background-color: black;
-        color: white;
-        width: 130px;
-        height: 50px;
-    }
-}
-
-
-
-
-
-
-@media(max-width:768px){
- section.navpart{
-        background-color: grey;
-    }
-        a.nav-link{
-        color: white;
-            font-family: 'Roboto Slab', serif
-    }
-    a.greeting{
-        text-decoration: none;
-        color: black;
-    }
-        h1.hello{
-        font-family: 'Lobster', cursive;
-    }
-       p.biopart{
-        font-family: 'Exo', sans-serif;
-        color: black;
-        font-size: 18px;
-    }
-    img.mypics{
-        height: 293px;
-    }
-        h3.caption{
-        font-family: 'Cinzel', serif;
-        color: white;
-        font-weight: lighter;
-    }
-     section.part1{
-        background-color: darkgrey;
-    }
-    section.part2{
-        background-image: url('../images/project\ background.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    a.project{
-        color: white;
-        text-decoration: none;
-        font-family: 'Bangers', cursive;
-    }
-        a.project{
-        color: white;
-        text-decoration: none;
-        font-family: 'Bangers', cursive;
-    }
-    button.toseeproject{
-        border-radius: 40px;
-        background-color: black;
-        color: white;
-        width: 100px;
-        height: 30px;
-    }
+@media (min-width: 768px) {
+  section.navpart {
+    background-color: grey;
+  }
+  a.nav-link {
+    color: white;
+    font-family: "Roboto Slab", serif;
+  }
+  h1.hello {
+    font-family: "Lobster", cursive;
+  }
+  a.greeting {
+    text-decoration: none;
+    color: black;
+  }
+  p.biopart {
+    font-family: "Exo", sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+  h3.caption {
+    font-family: "Cinzel", serif;
+    color: white;
+  }
+  section.part1 {
+    background-color: darkgrey;
+  }
+  section.part2 {
+    background-image: url("../images/background.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+  a.project {
+    color: white;
+    text-decoration: none;
+    font-family: "Bangers", cursive;
+  }
+  button.toseeproject {
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    width: 130px;
+    height: 50px;
+  }
+  section.part3 {
+    background-image: url("../images/socialbackground.png");
+    background-position: center;
+    background-size: cover;
+  }
+  h1.socials {
+    font-family: "Monoton", cursive;
+    color: white;
+  }
+  img.media1 {
+    width: 60px !important;
+    height: 60px;
+  }
+  img.media2 {
+    width: 60px !important;
+    height: 60px;
+    margin-left: 200px;
+  }
+  img.media3 {
+    width: 60px !important;
+    height: 60px;
+    margin-left: 200px;
+  }
+  button.moreinfo {
+    border-radius: 30px;
+    width: 180px;
+    height: 50px;
+    background-color: gray;
+    border-color: transparent;
+    margin-left: 80%;
+    font-family: "Bangers", cursive;
+    margin-top: 30px;
+  }
 }
 
+@media (max-width: 768px) {
+  section.navpart {
+    background-color: grey;
+  }
+  a.nav-link {
+    color: white;
+    font-family: "Roboto Slab", serif;
+  }
+  a.greeting {
+    text-decoration: none;
+    color: black;
+  }
+  h1.hello {
+    font-family: "Lobster", cursive;
+  }
+  p.biopart {
+    font-family: "Exo", sans-serif;
+    color: black;
+    font-size: 18px;
+  }
+  img.mypics {
+    height: 293px;
+  }
+  h3.caption {
+    font-family: "Cinzel", serif;
+    color: white;
+    font-weight: lighter;
+  }
+  section.part1 {
+    background-color: darkgrey;
+  }
+  section.part2 {
+    background-image: url("../images/background.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+  a.project {
+    color: white;
+    text-decoration: none;
+    font-family: "Bangers", cursive;
+  }
+  a.project {
+    color: white;
+    text-decoration: none;
+    font-family: "Bangers", cursive;
+  }
+  button.toseeproject {
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+  }
+  section.part3 {
+    background-image: url("../images/socialbackground.png");
+    background-position: center;
+    background-size: cover;
+  }
+  h1.socials {
+    font-family: "Monoton", cursive;
+    color: white;
+  }
+  img.media1 {
+    width: 40px !important;
+    height: 40px;
+  }
+  img.media2 {
+    width: 40px !important;
+    height: 40px;
+    margin-left: 30px;
+  }
+  img.media3 {
+    width: 40px !important;
+    height: 40px;
+    margin-left: 30px;
+  }
+  button.moreinfo {
+    border-radius: 30px;
+    width: 180px;
+    height: 50px;
+    background-color: gray;
+    border-color: transparent;
+    margin-left: 46%;
+    font-family: "Bangers", cursive;
+    margin-top: 20px;
+  }
+}
