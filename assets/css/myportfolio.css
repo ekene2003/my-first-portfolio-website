@@ -1,177 +1,108 @@
+:root {
+  --blue: blue;
+  --wht: white;
+  --bg: #f9fafe;
+  --wht: #fff;
+  --bbg: #f4f6ff;
+  --primary: #14ccbb;
+  --sec: #3ed2e6;
+  --oth: #553caf;
+  --yellow: #f2ef19;
+  --green: #19f28c;
+  --text: #868686;
+  --tom: tomato;
+  --radius: 5px;
+  --shad: 0 4px 16px -4px #0004;
+}
 * {
-  margin-left: 0;
-  margin-right: 0;
-  /* overflow-x: hidden; */
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all .3s ease-in-out;
 }
-@media (min-width: 768px) {
-  section.navpart {
-    background-color: grey;
-  }
-  a.nav-link {
-    color: white;
-    font-family: "Roboto Slab", serif;
-  }
-  h1.hello {
-    font-family: "Lobster", cursive;
-  }
-  a.greeting {
-    text-decoration: none;
-    color: black;
-  }
-  p.biopart {
-    font-family: "Exo", sans-serif;
-    color: black;
-    font-size: 20px;
-  }
-  h3.caption {
-    font-family: "Cinzel", serif;
-    color: white;
-  }
-  section.part1 {
-    background-color: darkgrey;
-  }
-  section.part2 {
-    background-image: url("../images/background.jpeg");
-    background-position: center;
-    background-size: cover;
-  }
-  a.project {
-    color: white;
-    text-decoration: none;
-    font-family: "Bangers", cursive;
-  }
-  button.toseeproject {
-    border-radius: 40px;
-    background-color: black;
-    color: white;
-    width: 130px;
-    height: 50px;
-  }
-  section.part3 {
-    background-image: url("../images/socialbackground.png");
-    background-position: center;
-    background-size: cover;
-  }
-  h1.socials {
-    font-family: "Monoton", cursive;
-    color: white;
-  }
-  a.socialpart{
-    text-decoration: none;
-  }
-  img.media1 {
-    width: 60px !important;
-    height: 60px;
-  }
-  img.media2 {
-    width: 60px !important;
-    height: 60px;
-    margin-left: 200px;
-  }
-  img.media3 {
-    width: 60px !important;
-    height: 60px;
-    margin-left: 200px;
-  }
-  button.moreinfo {
-    border-radius: 30px;
-    width: 180px;
-    height: 50px;
-    background-color: darkgray;
-    border-color: transparent;
-    margin-left: 600px;
-    font-family: "Bangers", cursive;
-    /* margin-top: 30px; */
-  }
+body{
+  background: var(--bbg);
 }
+header.my-header{
+display: flex;
+align-items: center;
+justify-content:space-between;
+padding: 0 2rem;
+background: var(--tom);
+z-index: 1;
+box-shadow:var(--shad);
+margin-bottom: 1.5rem;
+}
+a.brand-details{
+display: flex;
+align-items:center;
+gap: .5rem;
+flex: 0.3;
+}
+img.brand-logo{
+height:60px;
+width: 60px;
+border-radius: 50%;
+border: 2px solid var(--tom);
+}
+h2.nav-logo{
+font-family:Arial, Helvetica, sans-serif;
+color: #fff;
+}
+nav.the-nav{
+  flex: 0.3;
+}
+ul.nav-list{
+display: flex;
+align-items: center;
+gap: 1rem;
 
-@media (max-width: 768px) {
-  section.navpart {
-    background-color: grey;
-  }
-  a.nav-link {
-    color: white;
-    font-family: "Roboto Slab", serif;
-  }
-  a.greeting {
-    text-decoration: none;
-    color: black;
-  }
-  h1.hello {
-    font-family: "Lobster", cursive;
-  }
-  p.biopart {
-    font-family: "Exo", sans-serif;
-    color: black;
-    font-size: 18px;
-  }
-  img.mypics {
-    height: 293px;
-  }
-  h3.caption {
-    font-family: "Cinzel", serif;
-    color: white;
-    font-weight: lighter;
-  }
-  section.part1 {
-    background-color: darkgrey;
-  }
-  section.part2 {
-    background-image: url("../images/background.jpeg");
-    background-position: center;
-    background-size: cover;
-  }
-  a.project {
-    color: white;
-    text-decoration: none;
-    font-family: "Bangers", cursive;
-  }
-  a.project {
-    color: white;
-    text-decoration: none;
-    font-family: "Bangers", cursive;
-  }
-  button.toseeproject {
-    border-radius: 40px;
-    background-color: black;
-    color: white;
-    width: 100px;
-    height: 30px;
-  }
-  section.part3 {
-    background-image: url("../images/socialbackground.png");
-    background-position: center;
-    background-size: cover;
-  }
-  h1.socials {
-    font-family: "Monoton", cursive;
-    color: white;
-  }
-  img.media1 {
-    width: 40px !important;
-    height: 40px;
-  }
-  img.media2 {
-    width: 40px !important;
-    height: 40px;
-    margin-left: 30px;
-  }
-  img.media3 {
-    width: 40px !important;
-    height: 40px;
-    margin-left: 30px;
-  }
-  button.moreinfo {
-    border-radius: 30px;
-    width: 180px;
-    height: 50px;
-    background-color:darkgray;
-    border-color: transparent;
-    /* margin-left: 10%; */
-    font-family: "Bangers", cursive;
-    margin-top: 20px;
-  }
-    a.socialpart{
-    text-decoration: none;
-  }
+}
+ul.nav-list a{
+  color: #fff;
+  position: relative;
+  display: block;
+  background: transparent;
+}
+li.active{
+  color: darkgray;
+}
+ul.project-list{
+padding: .5rem ;
+background: var(--wht);
+box-shadow: var(--shad);
+border-radius: 5px;
+z-index: 3;
+position: absolute;
+display: none;
+
+}
+ul.project-list li{
+  color: var(--tom);
+  margin-bottom: .25rem;
+}
+ul.project-list li:hover{
+  background: var(--tom);
+  color: white;
+  border-radius: 3px;
+}
+ul.nav-list li:hover ul.project-list{
+  display: block;
+}
+button.more-info{
+  border-radius: 7px;
+  background-color: var(--wht);
+  color: var(--tom);
+  padding: .5rem;
+  box-shadow: var(--shad);
+  cursor: pointer;
+}
+button.more-info:hover{
+  border: 2px solid white;
+  background: var(--tom);
+  color: #fff;
 }
