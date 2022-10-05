@@ -762,7 +762,7 @@ background: transparent;
 padding: .3rem;
 }
 .skill-section{
-padding: 1.5rem;
+padding: 1rem;
 z-index: 1;
 position: relative;
 background:#111;
@@ -773,7 +773,7 @@ line-height: 1.5rem;
 .skill-section::before{
   content: '';
   height: 100%;
-  width: 60%;
+  width: 74%;
   background: var(--tom);
   right: 0%;
   bottom: 0%;
