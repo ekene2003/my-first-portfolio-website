@@ -800,6 +800,8 @@ aside.skill-right{
   /* justify-content: center; */
   align-items: center;
   z-index: 5;
+  position: relative;
+  right: 10%;
 }
 h1.skill-tittle{
 font-size: x-large;
