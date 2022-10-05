@@ -804,13 +804,16 @@ aside.skill-right{
   right: 10%;
 }
 h1.skill-tittle{
-font-size: x-large;
+font-size: large;
 font-family: 'Silkscreen', cursive;
 margin-bottom: 1rem;
+overflow: hidden;
+flex-flow: row wrap;
 }
 p.skills-desc{
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 padding-bottom: 1rem;
+
 }
 div.skill{
 display: flex;
@@ -827,7 +830,7 @@ div.skill svg{
   width: fit-content;
   height: 1rem;
   /* margin-left: .2rem; */
-  border-radius: 50%;
+  border-radius: 20%;
 }
 p.skill-paragraph{
 }
