@@ -801,7 +801,7 @@ aside.skill-right{
   align-items: center;
   z-index: 5;
   position: relative;
-  right: 10%;
+  right: 13%;
 }
 h1.skill-tittle{
 font-size: large;
@@ -818,16 +818,16 @@ padding-bottom: 1rem;
 div.skill{
 display: flex;
 align-items: center;
-padding: .5rem;
+padding: .3rem;
 background-color: #ffffff15;
 margin-bottom: .5rem;
-max-width: 50%;
+max-width: 47%;
 }
 div.skill svg{
-  padding: .2rem;
+  /* padding: .2rem; */
   display: block;
   background-color: var(--tom);
-  width: fit-content;
+  /* width: fit-content; */
   height: 1rem;
   /* margin-left: .2rem; */
   border-radius: 20%;
