@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ekene's page</title>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="./assets/css/all.min.css">
         <link rel="stylesheet" href="./assets/css/myportfolio.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +24,11 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Cinzel:wght@400;600&family=Edu+TAS+Beginner&family=Exo:wght@300&family=Lobster&family=Monoton&family=Roboto+Slab:wght@300&display=swap"
             rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Cinzel:wght@400;600&family=Edu+TAS+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Exo:wght@300&family=Lobster&family=Monoton&family=Press+Start+2P&family=Roboto+Slab:wght@300&family=Silkscreen&display=swap"
+            rel="stylesheet">
     </head>
 
     <body>
@@ -36,16 +42,19 @@
                     <a href="#home">
                         <li>HOME</li>
                     </a>
+                    <a href="#skills">
+                        <li>SKILLS</li>
+                    </a>
                     <a href="#projects">
                         <li>PROJECTS
                             <ul class="project-list">
-                                <a href="">
+                                <a href="#beginner">
                                     <li>Beginner</li>
                                 </a>
-                                <a href="">
+                                <a href="#intermediate">
                                     <li>intermediate</li>
                                 </a>
-                                <a href="">
+                                <a href="#advanced">
                                     <li>advanced</li>
                                 </a>
                             </ul>
@@ -54,14 +63,187 @@
                     <a href="#socials">
                         <li>SOCIALS</li>
                     </a>
-                </ul>
-            </nav>
-            <a href="" target="_blank"><button class="more-info" type="submit">click me</button></a>
-        </header>
-        <script src="./assets/js/all.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
+            <a href="./youclicked.html" target="_blank"><button class="more-info" type="submit">Click Me</button>
 
+                </ul>
+
+            </nav>
+    </a>
+    <button class="nav-icon"><i class="fa fa-bars"></i></button>
+        </header>
+        <main class="main-body">
+            <section class="section1" id="home">
+                <div class="bio-sides">
+                    <img src="./assets/images/IMG_7891.jpg" class="bio-img" alt="">
+                    <aside class="bio-info">
+                        <h2 class="bio-tittle">About Ekene</h2>
+                        <p class="bio-desc">My name is Ekenedirichukwu favour Azubuogu.i'm a 19 year old front end
+                            developer,
+                            and
+                            you're
+                            welcome to my space on the internet. I'm a boy with the mission to become a good software
+                            engineer
+                            and
+                            i'm highly prepared to overcome any task that comes my way.</p>
+                        <div class="bio-socials">
+                            <a href="https://www.whatsapp.com/08120842274" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.twitter.com/FAzubuogu" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/ekenefavour" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/_.ekene" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </aside>
+                </div>
+
+            </section>
+            <section class="skill-section" id="skills">
+                <div class="skills-details">
+                    <img src="./assets/images/background.jpeg" class="skill-image" alt="">
+                    <aside class="skill-right">
+                        <h1 class="skill-tittle">
+                            Check Out My Skills
+                        </h1>
+                        <p class="skills-desc">
+                            I've learnt skills on javascript,css,bootstrap,github and html.
+                        </p>
+                        <div class="skill">
+                            <div class="skill-paragraph">
+                                <h3>HTML</h3>
+                                <p>i have the knowledge of html tags and their uses </p>
+                            </div>
+                            <i class="fa fa-computer"></i>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-paragraph">
+                                <h3>CSS</h3>
+                                <p>i have knowledge on css and how to use the properties it comes with</p>
+                            </div>
+                            <i class="fa fa-tools"></i>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-paragraph">
+                                <h3>JS</h3>
+                                <p>i have knowledge on js and the properties it comes with </p>
+                            </div>
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-paragraph">
+                                <h3>BS</h3>
+                                <p>i have the knowledge of bootstrap</p>
+                            </div>
+                            <i class="fa fa-b"></i>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            <section class="project-section" id="projects">
+                <div class="project-head">
+                    <h1 class="projecct-tittle">MY PROJECTS</h1>
+                    <p class="project-desc">these are the the few projects i've been able to run</p>
+                </div>
+                <div class="project-category">
+                    <span><button class="project-btn" data-category="Beginners">Beginner</button></span>
+                    <span><button class="project-btn" data-category="intermediate">intermediate</button></span>
+                    <span><button class="project-btn" data-category="advanced">advanced</button></span>
+                </div>
+                <div class="allprojectcards">
+                    <div class="project-cards" data-type="advanced">
+                        <img src="./assets/images/secondproject.jpeg" alt="">
+                        <div class="web1">
+                            <a href="../secondCube/index.html"><button>CLICK TO SEE</button></a>
+                        </div>
+                    </div>
+                    <div class="project-cards" data-type="advanced">
+                        <img src="./assets/images/firstprojectpic.jpg" alt="">
+                        <div class="web1">
+                            <a href="../cube work 1/index.html"><button>CLICK TO SEE</button></a>
+                        </div>
+                    </div>
+                    <div class="project-cards" data-type="Beginners">
+                        <img src="./assets/images/begginers.jpg.png" alt="">
+                        <div class="web1">
+                            <a href="../waec/index.html"><button>CLICK TO SEE</button></a>
+                        </div>
+                    </div>
+                    <div class="project-cards" data-type="Beginners">
+                        <img src="./assets/images/begginers2.jpg.png" alt="">
+                        <div class="web1">
+                            <a href="../increment/index.html"><button>CLICK TO SEE</button></a>
+                        </div>
+                    </div>
+                    <div class="project-cards" data-type="intermediate">
+                        <img src="./assets/images/inter.png" alt="">
+                        <div class="web1">
+                            <a href="./index.html" target="_blank"><button>CLICK TO SEE</button></a>
+                        </div>
+                    </div>
+                    <div class="project-cards" data-type="intermediate">
+                        <img src="./assets/images/intermediate.png" alt="">
+                        <div class="web1">
+                            <a href="../classweb/index.html"><button>CLICK TO SEE</button></a>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+            <hr>
+            <footer class="socials" id="socials">
+                <div class="social-head">
+                    <h1>EKENESZN</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Numquam eveniet quam ipsam?</p>
+                </div>
+                <div class="social-sec">
+                    <h3>CONTACT ME</h3>
+                    <div class="contacts">
+                        <a href="tel:+o8120842274"><i class="fa fa-phone"></i>Call Me</a>
+                        <a href="mailto:azubuogufavour1@gmail.com"><i class="fa fa-envelope"></i>My Mail</a>
+                        <a href=""><i class="fa fa-globe"></i>More Projects</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <h3>SOCIALS</h3>
+                    <div class="social-med">
+                        <a href="https://www.whatsap.com/08120842274" target="_blank"><i class="fab fa-whatsapp"></i>My
+                            Whatsapp</a>
+                        <a href="https://www.facebook.com/ekenefavour" target="_blank"><i class="fab fa-facebook"></i>My
+                            Facebook</a>
+                        <a href="https://www.twitter.com/FAzubuogu" target="_blank"><i class="fab fa-twitter"></i>My
+                            Twitter</a>
+                        <a href="https://www.instagram.com/_.ekene" target="_blank"><i class="fab fa-instagram"></i>My
+                            Instagram</a>
+                    </div>
+                    <small>&copy;2022, portfolio | ekeneszn. All rights reserved</small>
+            
+                </div>
+            
+            </footer>
+        </main>
+
+        <script src="./assets/js/all.min.js"></script>
+        <script>
+                const singleElem = (element) => document.querySelector(element);
+                const multiElem = (elements) => document.querySelectorAll(elements);
+                let allProjectBtns = multiElem(".project-btn");
+                let allProjectCards = multiElem(".project-cards");
+                allProjectBtns.forEach(projectBtn => {
+                    projectBtn.onclick = function (e) {
+                        // e.preventDefault();
+                        let category = projectBtn.dataset.category;
+                        for (let i of allProjectCards) {
+                            if (i.dataset.type !== category) {
+                                i.style.display = "none";
+                            }
+                            else {
+                                i.style.display = "block";
+                            }
+                        }
+                    };
+                });
+                                                                                                                        const navBar = singleElem(".the-nav");
+                                                                                                                        const navIcon = singleElem(".nav-icon");
+                                                                                                                        navIcon.addEventListener("click", function (e) {
+                                                                                                                            navBar.classList.toggle("show-nav");
+                                                                                                                        })  
         </script>
     </body>
 
