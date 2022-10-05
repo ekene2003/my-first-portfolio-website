@@ -819,7 +819,7 @@ margin-bottom: .5rem;
 max-width: 50%;
 }
 div.skill svg{
-  padding: .5rem;
+  padding: .2rem;
   display: block;
   background-color: var(--tom);
   width: fit-content;
