@@ -797,7 +797,7 @@ height: 40vh;
 aside.skill-right{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   z-index: 5;
 }
@@ -816,7 +816,7 @@ align-items: center;
 padding: .5rem;
 background-color: #ffffff15;
 margin-bottom: .5rem;
-width: 60%;
+max-width: 50%;
 }
 div.skill svg{
   padding: .5rem;
@@ -824,7 +824,7 @@ div.skill svg{
   background-color: var(--tom);
   width: fit-content;
   height: 1rem;
-  margin-left: .2rem;
+  /* margin-left: .2rem; */
   border-radius: 50%;
 }
 p.skill-paragraph{
