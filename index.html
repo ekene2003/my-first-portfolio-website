@@ -29,7 +29,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Cinzel:wght@400;600&family=Edu+TAS+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Exo:wght@300&family=Lobster&family=Monoton&family=Press+Start+2P&family=Roboto+Slab:wght@300&family=Silkscreen&display=swap"
             rel="stylesheet">
-<link rel="stylesheet" href="https://res.cloudinary.com/dvznglupe/image/upload/cld-sample.jpg">
+        <link rel="stylesheet" href="https://res.cloudinary.com/dvznglupe/image/upload/cld-sample.jpg">
     </head>
 
     <body>
@@ -65,18 +65,17 @@
                     <a href="#socials">
                         <li>SOCIALS</li>
                     </a>
-            <a href="./youclicked.html" target="_blank"><button class="more-info" type="submit">Click Me</button>
-
+                    <a href="./youclicked.html"><button class="more-info" type="submit">Click Me</button>
                 </ul>
 
             </nav>
-    </a>
-    <button class="nav-icon"><i class="fa fa-bars"></i></button>
+            </a>
+            <button class="nav-icon"><i class="fa fa-bars"></i></button>
         </header>
         <main class="main-body">
             <section class="section1" id="home">
                 <div class="bio-sides">
-                    <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665005978/me_v0tysz.jpg" class="bio-img" alt="">
+                    <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665007184/mandem2_lixxcl.jpg" class="bio-img" alt="">
                     <aside class="bio-info">
                         <h2 class="bio-tittle">About Ekene</h2>
                         <p class="bio-desc">My name is Ekenedirichukwu favour Azubuogu.i'm a 19 year old front end
@@ -106,7 +105,7 @@
                             Check Out My Skills
                         </h1>
                         <p class="skills-desc">
-                            I've learnt skills on javascript, <br> css,bootstrap,github and html.
+                            I've learnt skills on javascript, css,bootstrap,github and html.
                         </p>
                         <div class="skill">
                             <div class="skill-paragraph">
@@ -132,9 +131,9 @@
                         <div class="skill">
                             <div class="skill-paragraph">
                                 <h3>BS</h3>
-                                <p>i have the knowledge of bootstrap</p>
+                                <p>i have the knowledge of bootstrap and the properties it comes with</p>
                             </div>
-                            <i class="fa fa-b"></i>
+                            <i class="fa fa-hammer"></i>
                         </div>
                     </aside>
                 </div>
@@ -177,7 +176,8 @@
                     <div class="project-cards" data-type="intermediate">
                         <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008684/inter_swha99.png" alt="">
                         <div class="web1">
-                            <a href="https://ekenesportfoliopage.netlify.app/" target="_blank"><button>CLICK TO SEE</button></a>
+                            <a href="https://ekenesportfoliopage.netlify.app/" target="_blank"><button>CLICK TO
+                                    SEE</button></a>
                         </div>
                     </div>
                     <div class="project-cards" data-type="intermediate">
@@ -187,16 +187,16 @@
                         </div>
                     </div>
                 </div>
-            
+
             </section>
             <hr>
             <footer class="socials" id="socials">
                 <div class="social-head">
-                    <h1>EKENESZN</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Numquam eveniet quam ipsam?</p>
+                    <h2>EKENESZN</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur ang elit. <br> Numquam eveniet quam ipsam?</p>
                 </div>
                 <div class="social-sec">
-                    <h3>CONTACT ME</h3>
+                    <h3>CONTACTS</h3>
                     <div class="contacts">
                         <a href="tel:+o8120842274"><i class="fa fa-phone"></i>Call Me</a>
                         <a href="mailto:azubuogufavour1@gmail.com"><i class="fa fa-envelope"></i>My Mail</a>
@@ -206,19 +206,15 @@
                 <div class="social">
                     <h3>SOCIALS</h3>
                     <div class="social-med">
-                        <a href="https://www.whatsap.com/08120842274" target="_blank"><i class="fab fa-whatsapp"></i>My
-                            Whatsapp</a>
-                        <a href="https://www.facebook.com/ekenefavour" target="_blank"><i class="fab fa-facebook"></i>My
-                            Facebook</a>
-                        <a href="https://www.twitter.com/FAzubuogu" target="_blank"><i class="fab fa-twitter"></i>My
-                            Twitter</a>
-                        <a href="https://www.instagram.com/_.ekene" target="_blank"><i class="fab fa-instagram"></i>My
-                            Instagram</a>
+                        <a href="https://www.whatsap.com/08120842274" target="_blank"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+                        <a href="https://www.facebook.com/ekenefavour" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+                        <a href="https://www.twitter.com/FAzubuogu" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                        <a href="https://www.instagram.com/_.ekene" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
                     </div>
                     <small>&copy;2022, portfolio | ekeneszn. All rights reserved</small>
-            
+
                 </div>
-            
+
             </footer>
         </main>
 
@@ -242,11 +238,12 @@
                         }
                     };
                 });
-                                                                                                                        const navBar = singleElem(".the-nav");
-                                                                                                                        const navIcon = singleElem(".nav-icon");
-                                                                                                                        navIcon.addEventListener("click", function (e) {
-                                                                                                                            navBar.classList.toggle("show-nav");
-                                                                                                                        })  
+                                const navBar = singleElem(".the-nav");
+                                const navIcon = singleElem(".nav-icon");
+                                navIcon.addEventListener("click", function (e) {
+                                navIcon.classList.toggle("when-click");
+                                navBar.classList.toggle("show-nav");
+                            })  
         </script>
     </body>
 
