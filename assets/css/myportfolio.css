@@ -22,7 +22,7 @@
   /* overflow: hidden; */
   text-decoration: none !important;
   list-style-type: none;
-  transition: all .1s ease-in;
+  transition: all .2s ease-in-out;
 
 }
 @media screen and (min-width:768px) {
@@ -42,6 +42,10 @@ position: fixed;
 width: 100%;
 
 }
+header.active-header{
+  background:gray;
+  
+}
 a.brand-details{
 display: flex;
 align-items:center;
@@ -52,7 +56,6 @@ img.brand-logo{
 height:60px;
 width: 60px;
 border-radius: 50%;
-border: 2px solid black;
 margin: .3rem 0;
 }
 h2.nav-logo{
@@ -74,6 +77,7 @@ ul.nav-list a{
   display: block;
   background: transparent;
 }
+
 ul.nav-list a:hover{
 color: grey;
 }
@@ -568,6 +572,9 @@ width: 100%;
 /* display: none; */
 /* overflow: hidden; */
 }
+header.active-header{
+  background: grey;
+}
 nav.the-nav{
     /* display: none; */
     position: absolute;
@@ -577,6 +584,9 @@ nav.the-nav{
     width: 100%;
     position: absolute;
     padding: .5rem;
+}
+nav.new-nav{
+  background: grey;
 }
 nav.show-nav{
     /* display: flex !important; */
@@ -596,7 +606,7 @@ img.brand-logo{
 height:50px;
 width: 50px !important;
 border-radius: 50%;
-border: 2px solid black;
+
 }
 h2.nav-logo{
 font-family:Arial, Helvetica, sans-serif !important;
@@ -657,12 +667,21 @@ button.nav-icon {
   padding: .3rem;
   border-radius: 50%;
 }
+button.new-icon{
+  background:grey;
+  border:2px solid black ;
+}
 button.when-click{
   border: 2px solid white;
   color: white;
   padding: 0.3rem;
   border-radius: 50%;
   background: black;
+}
+button.new{
+  background: grey;
+  color: #000;
+  border-radius: 2px solid black;
 }
 button.more-info:hover{
   border: 2px solid white;
