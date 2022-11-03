@@ -871,11 +871,13 @@ button.project-btn{
 padding: .2rem;
 border-radius: 15px;
 margin-bottom: 2rem;
-  background: #dbe1ff;
+  background: var(--text);
+  color: black;
 border: 2px solid #000;
 cursor: pointer;
 font-size: medium;
 font-family: 'Silkscreen', cursive;
+
 }
 button.project-btn:hover{
   background: #000;
@@ -918,7 +920,8 @@ div.web1 button{
   margin-top: .5rem;
   border-radius: 3rem;  
   border: 2px solid black;
-  background: #dbe1ff;
+  background: var(--text);
+  color: black;
   cursor: pointer;
 }
 div.web1 button:hover {
