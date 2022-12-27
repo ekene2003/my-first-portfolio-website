@@ -22,7 +22,7 @@
   /* overflow: hidden; */
   text-decoration: none !important;
   list-style-type: none;
-  /* transition: all .2s ease-in-out; */
+  transition: all 0.2s ease-in-out;
   scroll-behavior: smooth;
 }
 @media screen and (min-width: 768px) {
@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    background-color: #000;
+    background-color: rgb(112, 111, 111);
     z-index: 99;
     box-shadow: 0px 2px 3px 3px #0004;
     margin-bottom: 0.2rem;
@@ -59,7 +59,7 @@
   }
   h2.nav-logo {
     color: white;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Cinzel", serif;
   }
   nav.the-nav {
     flex: 0.3;
@@ -74,14 +74,16 @@
     position: relative;
     display: block;
     background: transparent;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family: "Cinzel", serif;
   }
 
   ul.nav-list a:hover {
     color: tomato;
   }
   button.nav-icon {
+    display: none;
+  }
+  button.nav-icon2 {
     display: none;
   }
   ul.project-list {
@@ -99,8 +101,8 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   ul.project-list li:hover {
-    background: black;
-    color: white;
+    background: gainsboro;
+    color: tomato;
     border-radius: 3px;
   }
   ul.nav-list li:hover ul.project-list {
@@ -116,12 +118,11 @@
     cursor: pointer;
     position: relative;
     transform: translateX(430%);
-    /* height: fit-content; */
     width: 3rem;
   }
   button.more-info:hover {
     border: 1px solid white;
-    background: black;
+    background: gray;
     color: #fff;
   }
 
@@ -148,7 +149,7 @@
     /* flex: 3; */
   }
   img.bio-img {
-    width: 35%;
+    max-width: 35%;
     max-height: 65vh;
     box-shadow: 0 2px 10px 3px #0004;
     position: relative;
@@ -176,8 +177,7 @@
     }
   }
   h2.bio-tittle {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family: "Cinzel", serif;
     color: black;
     width: fit-content;
     border-top-left-radius: 10px;
@@ -188,10 +188,9 @@
     font-size: 2rem;
   }
   p.bio-desc {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 200;
     text-align: left;
     line-height: 2rem;
     position: relative;
@@ -213,86 +212,52 @@
     padding: 0.5rem;
     color: white;
     display: block;
-    background-color: black;
+    background-color: rgba(62, 57, 57, 0.649);
     width: fit-content;
     border-radius: 50%;
   }
   div.bio-socials a:hover {
     background: transparent;
-    color: #000;
+    color: gray;
     /* padding: .5rem; */
   }
-  .skill-section {
+  section.skill-section {
+    background: rgba(202, 200, 200, 0.866);
     padding: 2rem;
-    z-index: 1;
-    position: relative;
-    background-color: rgba(229, 77, 43, 0.976);
-    overflow: hidden;
-  }
-  .skill-section::before {
-    content: "";
-    height: 100%;
-    width: 69%;
-    background: rgb(156, 156, 164);
-    right: 0%;
-    bottom: 0%;
-    position: absolute;
-    transform: skew(-30deg);
-    z-index: 3;
-  }
-  div.skills-details {
-    display: flex !important;
-    align-items: center;
-    gap: 1rem;
-    color: white;
-  }
-  img.skill-image {
-    width: 50% !important;
-    z-index: 5;
-    border-radius: 6px;
-    /* filter:grayscale(3) ; */
-  }
-  aside.skill-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
   }
   h1.skill-tittle {
-    font-size: x-large;
-    font-family: "Times New Roman", Times, serif;
-    margin-bottom: 1rem;
+    font-family: "Cinzel", serif;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
   }
-  p.skills-desc {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    padding-bottom: 1rem;
+  div.skills {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
   }
-  div.skill {
+  div.skill-two {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  div.skill-box {
+    padding: 2rem;
+    background: white;
     display: flex;
     align-items: center;
-    padding: 1rem;
-    background-color: #ffffff15;
-    margin-bottom: 0.5rem;
-    width: 70%;
+    height: 25vh;
+    width: 50%;
+    box-shadow: 2px 3px 5px 2px grey;
+    font-family: "Cinzel", serif;
+    font-weight: 500;
   }
-  div.skill svg {
-    padding: 1.2rem;
-    display: block;
-    background-color: var(--wht);
-    color: #000;
-    background: lightgrey;
-    width: fit-content;
-    height: 2rem;
-    margin-left: 1rem;
-    border-radius: 50%;
-    border: 2px dashed black;
-  }
-  p.skill-paragraph {
+  div.skill-box img {
+    margin-right: 1rem;
   }
   section.project-section {
-    background: white;
+    background-color: lightyellow;
     padding: 2rem;
   }
   div.project-head {
@@ -302,14 +267,15 @@
     gap: 1rem;
   }
   h1.project-tittle {
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 200;
+    font-family: "Cinzel", serif;
+    font-weight: 600;
     font-size: 2rem;
     margin-top: 5rem;
   }
   p.project-desc {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     margin-bottom: 2rem;
+    font-size: large;
   }
 
   div.project-category {
@@ -322,12 +288,12 @@
     padding: 0.5rem;
     border-radius: 15px;
     margin-bottom: 2rem;
-    background: rgb(156, 156, 164);
     color: black;
-    border: 2px dashed #000;
     cursor: pointer;
     font-size: medium;
-    font-family: "Silkscreen", cursive;
+    font-family: "cinzel", cursive;
+    border: 1px solid black;
+    font-weight: 700;
   }
   button.project-btn:hover {
     background: #000;
@@ -339,204 +305,200 @@
     margin-bottom: 1rem;
   }
 
-div.project-cards {
-  padding: 0.5rem;
-  border-radius: 4px;
-  background-color: grey;
-  position: relative;
-  height: 30vh;
-  width: 50%;
-  overflow: hidden;
-  box-shadow: 0 3px 2px 1px #000;
-  /* display: none; */
-}
+  div.project-cards {
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: rgb(172, 167, 167);
+    position: relative;
+    height: 35vh;
+    width: 50%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 1px rgb(47, 43, 43);
+  }
 
-div.project-cards img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  opacity: 0.6;
-}
-div.web1 {
-  z-index: 5;
-  position: absolute;
-}
-div.web1 button {
-  padding: 0.25rem;
-  margin-top: 0.5rem;
-  border-radius: 3rem;
-  border: 2px solid black;
-  background: #dbe1ff;
-  cursor: pointer;
-  position: absolute;
-  margin-top: 6rem;
-  text-align: center;
-  font-family: serif;
-}
-div.web1 button:hover {
-  background: #000;
-  color: #dbe1ff;
-  border: 2px solid gray;
-}
-footer.socials {
-  padding: 3rem 2rem;
-  display: flex;
-  gap: 4rem;
-  background: gray;
-  height: fit-content;
-  width: 100%;
-  position: relative;
-}
-div.social-head {
-  text-align: justify;
-}
-div.social-head h2 {
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 1.7rem;
-}
-div.social-head p {
-  color: white;
-  margin-bottom: 1.5rem;
-}
+  div.project-cards img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.6;
+  }
+  div.web1 {
+    z-index: 5;
+    position: relative;
+  }
+  div.web1 button {
+    padding: 0.25rem;
+    border: 1px solid black;
+    background: rgba(129, 129, 142, 0.502);
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-top: 9rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  div.web1 button:hover {
+    background: rgb(125, 122, 122);
+    color: black;
+  }
+  footer.socials {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 4rem;
+    background-color: rgb(112, 111, 111);
+    height: fit-content;
+    width: 100%;
+    position: relative;
+  }
+  div.social-head {
+    text-align: justify;
+  }
+  div.social-head h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+  }
+  div.social-head p {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
 
-div.social-sec {
-  color: white;
-  margin-left: 5rem;
-}
-div.social-sec a {
-  color: white;
-}
-div.social-sec h3 {
-  margin-bottom: 0.7rem;
-}
-div.social-sec a:hover {
-  color: black;
-}
-div.contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  margin-right: 5rem;
-}
-div.contacts svg {
-  margin-right: 0.5rem;
-}
-div.social {
-  color: white;
-}
-div.social h3 {
-  margin-bottom: 0.7rem;
-}
+  div.social-sec {
+    color: white;
+    margin-left: 5rem;
+  }
+  div.social-sec a {
+    color: white;
+  }
+  div.social-sec h3 {
+    margin-bottom: 0.7rem;
+  }
+  div.social-sec a:hover {
+    color: tomato;
+  }
+  div.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-right: 5rem;
+  }
+  div.contacts svg {
+    margin-right: 0.5rem;
+  }
+  div.social {
+    color: white;
+  }
+  div.social h3 {
+    margin-bottom: 0.7rem;
+  }
 
-div.social small {
-  position: absolute;
-  bottom: 0;
-  right: 2%;
-}
-div.social a {
-  color: white;
-}
-div.social a:hover {
-  color: grey;
-}
-div.social-med {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  color: white;
-}
-div.social-med svg {
-  margin-right: 0.5rem;
-}
-main.extra-body {
-  background: #ffffff15;
-}
-section.extra-bio {
-  padding: 7rem 3rem;
-  background: #ffffff68;
-}
+  div.social small {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+  }
+  div.social a {
+    color: white;
+  }
+  div.social a:hover {
+    color: rgba(242, 84, 56, 0.744);
+  }
+  div.social-med {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: white;
+  }
+  div.social-med svg {
+    margin-right: 0.5rem;
+  }
+  main.extra-body {
+    background: #ffffff15;
+  }
+  section.extra-bio {
+    padding: 7rem 3rem;
+    background: #ffffff68;
+  }
 
-button.go-back {
-  border-radius: 7px;
-  background-color: var(--bbg);
-  color: black;
-  padding: 0.5rem;
-  box-shadow: var(--shad);
-  cursor: pointer;
-  /* display: none; */
-}
-button.go-back:hover {
-  background: black;
-  color: #fff;
-  border: 2px solid #fff;
-}
-div.carousel {
-  max-height: 30rem;
-  max-width: 36rem;
-}
-div.carousel img {
-  height: 23rem;
-}
-main.extra-body h1 {
-  font-family: "Silkscreen", cursive;
-}
-main.extra-body p {
-  font-family: "Silkscreen", cursive;
-  font-size: large;
-  font-weight: 400;
-  /* text-align: left; */
-  line-height: 1.5rem;
-}
-div.schools {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-div.schools img {
-  box-shadow: var(--shad);
-  border-radius: 3px;
-  margin-bottom: 2rem;
-}
-div.schools img:hover {
-  transform: scale(1.5);
-}
-section.hobby {
-  background: var(--bbg);
-  padding: 1rem;
-}
-div.hobby-head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-div.hobby-head h1 {
-  margin-top: 4rem;
-}
+  button.go-back {
+    border-radius: 7px;
+    background-color: var(--bbg);
+    color: black;
+    padding: 0.5rem;
+    box-shadow: var(--shad);
+    cursor: pointer;
+    /* display: none; */
+  }
+  button.go-back:hover {
+    background: black;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  div.carousel {
+    max-height: 30rem;
+    max-width: 36rem;
+  }
+  div.carousel img {
+    height: 23rem;
+  }
+  main.extra-body h1 {
+    font-family: "Silkscreen", cursive;
+  }
+  main.extra-body p {
+    font-family: "Silkscreen", cursive;
+    font-size: large;
+    font-weight: 400;
+    /* text-align: left; */
+    line-height: 1.5rem;
+  }
+  div.schools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.schools img {
+    box-shadow: var(--shad);
+    border-radius: 3px;
+    margin-bottom: 2rem;
+  }
+  div.schools img:hover {
+    transform: scale(1.5);
+  }
+  section.hobby {
+    background: var(--bbg);
+    padding: 1rem;
+  }
+  div.hobby-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.hobby-head h1 {
+    margin-top: 4rem;
+  }
 
-ul.hobby-list {
-  list-style-type: decimal !important;
-}
-section.music {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-div.music-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-div.music-header h1 {
-  margin-top: 4rem;
-}
-iframe.youtube {
-  max-width: 15rem !important;
-  max-width: 10rem;
-}
+  ul.hobby-list {
+    list-style-type: decimal !important;
+  }
+  section.music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.music-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.music-header h1 {
+    margin-top: 4rem;
+  }
+  iframe.youtube {
+    max-width: 15rem !important;
+    max-width: 10rem;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -547,7 +509,7 @@ iframe.youtube {
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
-    background: black;
+    background-color: rgb(112, 111, 111);
     z-index: 999;
     box-shadow: var(--shad);
     margin-bottom: 3rem;
@@ -558,25 +520,21 @@ iframe.youtube {
   }
   header.active-header {
     background: rgba(163, 160, 160, 0.911);
-    
   }
   nav.the-nav {
     /* display: none; */
     position: absolute;
     top: 100%;
     left: -100%;
-    background-color: black;
+    background-color: rgb(112, 111, 111);
     width: 100%;
     position: absolute;
     padding: 0.5rem;
   }
   nav.new-nav {
     background: rgba(163, 160, 160, 0.911);
-
   }
   nav.show-nav {
-    /* display: flex !important; */
-    /* flex-direction: column; */
     left: 0;
     transition: all 0.5s ease-in-out;
     height: max-content;
@@ -593,7 +551,7 @@ iframe.youtube {
     border-radius: 50%;
   }
   h2.nav-logo {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Cinzel", serif;
     color: #fff;
   }
   /* nav.the-nav{
@@ -609,77 +567,40 @@ iframe.youtube {
     position: relative;
     display: block;
     background: transparent;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-
-  }
-  ul.nav-list a:hover {
-    color: grey;
+    font-family: "Cinzel", serif;
   }
   ul.project-list {
-    padding: 0.5rem;
-    background: var(--wht);
-    box-shadow: var(--shad);
-    border-radius: 5px;
-    z-index: 3;
-    position: absolute;
     display: none;
   }
-  ul.project-list li {
-    color: black;
-    margin-bottom: 0.25rem;
-  }
-  ul.project-list li:hover {
-    background: black;
-    color: white;
-    border-radius: 3px;
-  }
-  ul.nav-list li:hover ul.project-list {
-    display: block;
-  }
+
   button.more-info {
     border-radius: 7px;
     background-color: var(--bbg);
     color: black;
     padding: 0.4rem;
-    box-shadow: var(--shad);
-    cursor: pointer;
     margin-bottom: 1rem;
-    /* display: none; */
   }
   button.nav-icon {
-    background: white;
+    background: grey;
     color: black;
-    border: 2px solid #dbe1ff;
+    border: 1px solid black;
     padding: 0.3rem;
     border-radius: 50%;
   }
   button.new-icon {
-    background: grey;
-    border: 2px solid black;
+    background: lightgray;
+    /* border: 2px solid black; */
   }
-  button.when-click {
-    border: 2px solid white;
-    color: white;
+  button.nav-icon2 {
+    display: none;
     padding: 0.3rem;
     border-radius: 50%;
-    background: black;
-  }
-  button.new {
+    border: 1px solid black;
     background: grey;
-    color: #000;
-    border-radius: 2px solid black;
   }
-  button.more-info:hover {
-    border: 2px solid white;
-    background: black;
-    color: #fff;
-  }
-
   main.main-body {
   }
   section.section1 {
-    /* display: flex; */
-    /* flex-direction: column; */
   }
   div.bio-sides {
     padding-top: 4rem;
@@ -689,20 +610,14 @@ iframe.youtube {
     background: white;
   }
   aside.bio-info {
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     gap: 1.4rem;
-    /* line-height: 1rem; */
-    /* flex: 3; */
   }
   img.bio-img {
     width: 40%;
     height: 29vh;
     box-shadow: var(--shad);
-    /* flex: 3; */
-    /* flex: 1; */
-    /* object-fit:scale-down; */
     border-radius: 100%;
     margin-left: 1rem;
     position: relative;
@@ -725,21 +640,14 @@ iframe.youtube {
     }
   }
   h2.bio-tittle {
-    /* font-family: "Silkscreen", cursive; */
-    color: white;
-    /* display: block; */
-    background: black;
-    padding: 0.22rem;
-    width: fit-content;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin-bottom: .5rem;
+    font-family: "Cinzel", serif;
+    /* margin-bottom: .3rem; */
     position: relative;
     animation: bounce 1s ease-in;
   }
   p.bio-desc {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+      sans-serif;
     font-size: 1rem;
     font-weight: 300;
     text-align: left;
@@ -762,87 +670,65 @@ iframe.youtube {
     padding: 0.5rem;
     color: white;
     display: block;
-    background-color: black;
+    background-color: rgba(62, 57, 57, 0.649);
     width: fit-content;
     border-radius: 50%;
     margin-bottom: 1rem;
   }
-
-  .skill-section {
+  section.skill-section {
+    background: rgba(202, 200, 200, 0.866);
     padding: 1rem;
-    z-index: 1;
-    position: relative;
-    background-color: rgba(229, 77, 43, 0.976);
-    overflow: hidden;
-    width: 100%;
-    /* max-width: 50vh; */
-    /* line-height: 1.5rem; */
-  }
-  .skill-section::before {
-    content: "";
-    height: 100%;
-    width: 74%;
-    background: rgb(156, 156, 164);
-  
-    right: 0%;
-    bottom: 0%;
-    position: absolute;
-    transform: skew(29deg);
-    z-index: 3;
-  }
-  div.skills-details {
-    display: flex !important;
-    align-items: center;
-    gap: 0.8rem;
-    color: #fff;
-  }
-  img.skill-image {
-    width: 46% !important;
-    height: 39vh;
-    z-index: 5;
-    border-radius: 6px;
-  
-  }
-  aside.skill-right {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    z-index: 5;
-    position: relative;
+    /* overflow: hidden; */
   }
   h1.skill-tittle {
-    font-size: large;
-    font-family: "Times New Roman", Times, serif;
-
-    /* font-family: "Silkscreen", cursive; */
-    margin-bottom: 1rem;
-    overflow: hidden;
+    font-family: "Cinzel", serif;
+    color: black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  div.skills {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
     flex-flow: row wrap;
   }
-  p.skills-desc {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    padding-bottom: 1rem;
+  div.skill-two {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-flow: row wrap;
   }
-  div.skill {
+  div.skill-box:nth-child(2) {
+    flex: 100%;
+  }
+  div.skill-box:nth-child(1) {
+    flex: 100%;
+  }
+  div.skill-box:nth-child(3) {
+    flex: 100%;
+  }
+  div.skill-box:nth-child(4) {
+    flex: 100%;
+  }
+  div.skill-box:nth-child(5) {
+    flex: 100%;
+  }
+  div.skill-box {
+    /* padding: 2rem; */
+    background: white;
     display: flex;
     align-items: center;
-    padding: 0.3rem;
-    background-color: #ffffff15;
-    margin-bottom: 0.5rem;
-    max-width: 79%;
+    height: 20vh;
+    width: 40%;
+    box-shadow: 2px 3px 5px 2px grey;
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    overflow: hidden;
+    text-align: left;
   }
-  div.skill svg {
-    padding: 0.3rem;
-    display: block;
-    background-color: lightgray;
-    color: #000;
-    height: 1rem;
-    border-radius: 50%;
-    border: 2px dashed black;
-  }
-  p.skill-paragraph {
+  div.skill-box img {
+    margin: 0 1rem;
   }
   section.project-section {
     padding: 1.2rem;
@@ -854,13 +740,13 @@ iframe.youtube {
     gap: 0.2rem;
   }
   h1.project-tittle {
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 200;
-    font-size: large;
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
     margin-top: 5rem;
   }
   p.project-desc {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     margin-bottom: 2rem;
   }
   div.project-category {
@@ -875,10 +761,11 @@ iframe.youtube {
     margin-bottom: 2rem;
     background: rgb(156, 156, 164);
     color: black;
-    border: 2px dashed #000;
     cursor: pointer;
+    font-family: "Cinzel", serif;
     font-size: medium;
-    font-family: "Silkscreen", cursive;
+    border: 1px solid black;
+    font-weight: 700;
   }
   button.project-btn:hover {
     background: #000;
@@ -891,38 +778,31 @@ iframe.youtube {
     align-items: center;
     justify-content: center;
   }
-  div.project-cards:first-child{
+  div.project-cards:first-child {
     flex: 100%;
   }
-  div.project-cards:nth-child(3){
-    
+  div.project-cards:nth-child(3) {
   }
-  div.project-cards:nth-child(2){
-    
-    
+  div.project-cards:nth-child(2) {
   }
-  div.project-cards:nth-child(4){
-flex:100%;
+  div.project-cards:nth-child(4) {
+    flex: 100%;
   }
-  div.project-cards:nth-child(5){
-
+  div.project-cards:nth-child(5) {
   }
-  div.project-cards:nth-child(6){
-
-          
+  div.project-cards:nth-child(6) {
   }
   div.project-cards {
     padding: 0.5rem;
     border-radius: 4px;
-    background-color: grey;
     position: relative;
     height: 20vh;
     width: 40%;
     overflow: hidden;
-    box-shadow: 0 3px 4px 1px #000;
-    flex-flow:  wrap;
+    flex-flow: wrap;
     flex: 10;
-
+    background: rgb(172, 167, 167);
+    box-shadow: 2px 2px 5px 1px rgb(47, 43, 43);
   }
   div.project-cards img {
     position: absolute;
@@ -935,28 +815,24 @@ flex:100%;
   }
   div.web1 {
     z-index: 5;
-    position: absolute;
-    top: 62%;
-    left: 20%;
+    position: relative;
   }
   div.web1 button {
     padding: 0.25rem;
     margin-top: 0.5rem;
-    border-radius: 3rem;
-    border: 2px solid black;
-    background: var(--text);
     color: black;
-    cursor: pointer;
+    border: 1px solid black;
+    background: rgba(129, 129, 142, 0.502);
+    position: absolute;
+    right: 0;
+    margin-top: 6rem;
+    font-family: "Times New Roman", Times, serif;
   }
-  div.web1 button:hover {
-    background: #000;
-    color: #dbe1ff;
-    border: 2px solid gray;
-  }
+
   footer.socials {
     padding: 1.5rem 1.2rem;
     display: flex;
-    background: grey;
+    background-color: rgb(112, 111, 111);
     height: fit-content;
     width: 100%;
     position: relative;
@@ -984,10 +860,6 @@ flex:100%;
   }
   div.social-sec h3 {
     margin-bottom: 0.7rem;
-  }
-  div.social-sec h3:hover,
-  div.social-sec a:hover {
-    color: #000;
   }
   div.contacts {
     display: flex;
