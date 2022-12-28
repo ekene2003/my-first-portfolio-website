@@ -24,6 +24,7 @@
   list-style-type: none;
   transition: all 0.2s ease-in-out;
   scroll-behavior: smooth;
+  
 }
 @media screen and (min-width: 768px) {
   body {
@@ -826,7 +827,8 @@
     background: rgba(129, 129, 142, 0.502);
     position: absolute;
     right: 0;
-    margin-top: 6rem;
+    /* margin-top: 5rem; */
+    margin:  5rem auto ;
     font-family: "Times New Roman", Times, serif;
   }
 
