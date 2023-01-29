@@ -223,7 +223,8 @@
     /* padding: .5rem; */
   }
   section.skill-section {
-    background: rgba(202, 200, 200, 0.866);
+    /* background: rgba(202, 200, 200, 0.866); */
+ background: linear-gradient(to left, rgba(217, 215, 214, 0.76) 30%,grey);
     padding: 2rem;
   }
   h1.skill-tittle {
@@ -258,7 +259,7 @@
     margin-right: 1rem;
   }
   section.project-section {
-    background-color: lightyellow;
+    /* background-color: lightyellow; */
     padding: 2rem;
   }
   div.project-head {
@@ -416,11 +417,13 @@
     margin-right: 0.5rem;
   }
   main.extra-body {
-    background: #ffffff15;
+ background: linear-gradient(to left, rgba(228, 219, 219, 0.896) 60%,grey) 
+
   }
   section.extra-bio {
     padding: 7rem 3rem;
-    background: #ffffff68;
+    display: flex;
+    gap: 1rem;
   }
 
   button.go-back {
@@ -437,27 +440,44 @@
     color: #fff;
     border: 2px solid #fff;
   }
-  div.carousel {
-    max-height: 30rem;
-    max-width: 36rem;
-  }
-  div.carousel img {
-    height: 23rem;
-  }
-  main.extra-body h1 {
-    font-family: "Silkscreen", cursive;
+ div.slides{
+  width: 36rem;
+  height: 61vh;
+  overflow: hidden;
+border-radius: .5rem;
+  box-shadow: 2px 2px 5px 1px rgb(47, 43, 43);
+ }
+ div.slider-wrap{
+  display: flex;
+  position: relative;
+  transition: all 2s ease-in-out 3ms;
+ }
+ .slide{
+ width: 100%;
+ height: 60vh;
+ }
+ img.slide-img{
+  width: 46vw;
+  height: 63vh;
+  object-fit: cover;
+ }
+  main.extra-body h1 {  
+    font-size: 4rem;
+    font-family: "cinzel", cursive;
+    margin-top: 3rem;
   }
   main.extra-body p {
-    font-family: "Silkscreen", cursive;
-    font-size: large;
-    font-weight: 400;
-    /* text-align: left; */
-    line-height: 1.5rem;
+    font-family: "cinzel", cursive;
+    font-size: 1.3rem;
+    text-align: justify;
+    /* line-height: 2.5rem;  */
+    /* word-spacing: .5rem; */
   }
   div.schools {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    /* gap: 3rem; */
   }
   div.schools img {
     box-shadow: var(--shad);
@@ -465,10 +485,10 @@
     margin-bottom: 2rem;
   }
   div.schools img:hover {
-    transform: scale(1.5);
+    transform: scale(2);
   }
   section.hobby {
-    background: var(--bbg);
+    /* background: var(--bbg); */
     padding: 1rem;
   }
   div.hobby-head {
@@ -909,10 +929,9 @@
     /* gap: 7rem; */
   }
   main.extra-body h1 {
-    font-family: "Silkscreen", cursive;
   }
   main.extra-body p {
-    font-family: "Silkscreen", cursive;
+  
     font-size: 1rem;
     font-weight: 400;
   }
