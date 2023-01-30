@@ -1,3 +1,5 @@
+const singleElem = (element) => document.querySelector(element);
+const multiElem = (elements) => document.querySelectorAll(elements);
 let slider = document.querySelector(".slider-wrap");
 let index = 0;
 
@@ -8,12 +10,14 @@ setInterval(() => {
     index = -1;
   }
 }, 4000);
-if (window.scrollY >= 50) {
-  header.classList.add("active-header");
-  nav.classList.add("new-nav");
-  navIcon.classList.add("new-icon");
-} else {
-  header.classList.remove("active-header");
-  nav.classList.remove("new-nav");
-  navIcon.classList.remove("new-icon");
-}
+window.addEventListener("scroll", function () {
+  let nav = singleElem(".the-nav");
+  let header = singleElem(".my-header");
+  // let list = singleElem(".nav-list");
+
+  if (window.scrollY >= 50) {
+    header.classList.add("active-header");
+  } else {
+    header.classList.remove("active-header");
+  }
+});

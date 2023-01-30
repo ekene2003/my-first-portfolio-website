@@ -457,7 +457,7 @@ border-radius: .5rem;
  height: 60vh;
  }
  img.slide-img{
-  width: 46vw;
+  width: 49vw;
   height: 63vh;
   object-fit: cover;
  }
@@ -485,23 +485,35 @@ border-radius: .5rem;
     margin-bottom: 2rem;
   }
   div.schools img:hover {
-    transform: scale(2);
+    transform: scale(1.7);
   }
   section.hobby {
-    /* background: var(--bbg); */
     padding: 1rem;
   }
   div.hobby-head {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: .3rem;
   }
   div.hobby-head h1 {
     margin-top: 4rem;
+    font-size: 2.5rem;
+    font-family: "cinzel", cursive;
+  }
+  div.hobby-head  P{
+    margin-bottom: 1rem;
   }
 
   ul.hobby-list {
     list-style-type: decimal !important;
+    font-size: 1rem;
+    /* text-align: center; */
+    font-family: "cinzel", cursive;
+text-align: center;
+  }
+  ul.hobby-list li{
+    margin-bottom: .5rem;
   }
   section.music {
     display: flex;
@@ -515,11 +527,22 @@ border-radius: .5rem;
   }
   div.music-header h1 {
     margin-top: 4rem;
+    font-size: 2.5rem;
+  }
+  div.music-header p{
+    margin-bottom: 2rem;
+  }
+  div.songs{
+    /* display: flex; */
   }
   iframe.youtube {
     max-width: 15rem !important;
     max-width: 10rem;
   }
+  iframe.youtube::hover{
+   transform: scale(2);
+  }
+  
 }
 @media screen and (max-width: 768px) {
   body {
@@ -542,6 +565,7 @@ border-radius: .5rem;
   header.active-header {
     background: rgba(163, 160, 160, 0.911);
   }
+
   nav.the-nav {
     /* display: none; */
     position: absolute;
@@ -698,7 +722,9 @@ border-radius: .5rem;
     margin-bottom: 1rem;
   }
   section.skill-section {
-    background: rgba(202, 200, 200, 0.866);
+    /* background: rgba(202, 200, 200, 0.866); */
+ background: linear-gradient(to left, rgba(228, 219, 219, 0.896) 60%,grey);
+
     padding: 1rem;
     /* overflow: hidden; */
   }
@@ -919,34 +945,48 @@ border-radius: .5rem;
     margin-right: 0.7rem;
   }
   main.extra-body {
-    background: #fff;
+ background: linear-gradient(to left, rgba(228, 219, 219, 0.896) 60%,grey) 
+  
   }
   section.extra-bio {
     padding: 5rem 0.5rem;
-    background: #fff;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* gap: 7rem; */
+    
   }
   main.extra-body h1 {
+    font-family: "cinzel", cursive;
+
   }
   main.extra-body p {
-  
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "cinzel", cursive;
+
   }
-  div.carousel {
-    max-height: 20rem;
-    width: 100%;
-    /* margin-left: 13rem; */
-  }
-  div.carousel img {
-    height: 19rem;
-    /* width: 12rem; */
-  }
+  div.slides{
+  width: 21rem;
+  height: 31vh;
+  overflow: hidden;
+border-radius: .5rem;
+  box-shadow: 2px 2px 5px 1px rgb(47, 43, 43);
+ }
+ div.slider-wrap{
+  display: flex;
+  position: relative;
+  transition: all 2s ease-in-out 3ms;
+ }
+ .slide{
+ width: 100%;
+ height: 60vh;
+ }
+ img.slide-img{
+  width: 100vw;
+  height: 33vh;
+  object-fit: cover;
+ }
   div.schools {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
   div.schools img {
@@ -955,10 +995,9 @@ border-radius: .5rem;
     margin-bottom: 2rem;
   }
   div.schools img:hover {
-    transform: scale(1.7);
+    transform: scale(2.4);
   }
   section.hobby {
-    background: var(--bbg);
     padding: 1rem;
   }
   div.hobby-head {
@@ -968,12 +1007,17 @@ border-radius: .5rem;
   }
   div.hobby-head h1 {
     margin-top: 3rem;
+    font-family: "cinzel", cursive;
+  }
+  div.hobby-head p{
+    font-family: "cinzel", cursive;
   }
   ul.hobby-list {
+    font-family: "cinzel", cursive;
     /* list-style-type:decimal !important; */
   }
   section.music {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   div.music-header {
     display: flex;
@@ -983,10 +1027,9 @@ border-radius: .5rem;
   div.music-header h1 {
     margin-top: 4rem;
   }
-  iframe.youtube {
-    width: 20rem;
-    height: 15rem;
-  }
+div.songs{
+  
+}
   button.go-back {
     border-radius: 7px;
     background-color: var(--bbg);
