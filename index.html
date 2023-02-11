@@ -461,34 +461,23 @@
                     nav.classList.remove('new-nav');
                     navIcon.classList.remove('new-icon');
                         }
-                // if (window.scrollY >= 390) {
-                //     skillSection.style.transition = "all 1s ease-in";
-                //     skillSection.style.opacity = "1";
-                // }
-                // else {
-                //     skillSection.style.opacity = "0";
-                // }
-                //         if (window.scrollY >= 1120) {
-                //             projectSection.style.transition = "all 2s ease-in-out";
-                //             projectSection.style.opacity = "1";
-                //             projectSection.classList.add("moves");
-                //             skillSection.style.opacity = "0";
-                //         }
-                //         else {
-                //             projectSection.style.opacity = "0";
-                // }
-            })
-                                                                        //font-family: 'Bangers', cursive;
-                                                                        //font-family: 'Cinzel', serif;
-                                                                        //font-family: 'Edu TAS Beginner', cursive;
-                                                                        //font-family: 'Edu VIC WA NT Beginner', cursive;
-                                                                        //font-family: 'Exo', sans - serif;
-                                                                        //font-family: 'Lobster', cursive;
-                                                                        //font-family: 'Monoton', cursive;
-                                                                        //font-family: 'Press Start 2P', cursive;
-                                                                        //font-family: 'Roboto Slab', serif;
-                                                                        //font-family: 'Silkscreen', cursive;
-                                                                    // font - family: 'Amatic SC', cursive;
+                                                    if (window.scrollY >= 390) {
+                                                        skillSection.style.transition = "all 1s ease-in";
+                                                        skillSection.style.opacity = "1";
+                                                    }
+                                                    else {
+                                                        skillSection.style.opacity = "0";
+                                                    }
+                                                    if (window.scrollY >= 1320) {
+                                                        projectSection.style.transition = "all 2s ease-in-out";
+                                                        projectSection.style.opacity = "1";
+                                                        projectSection.classList.add("moves");
+                                                        skillSection.style.opacity = "0";
+                                                    }
+                                                    else {
+                                                        projectSection.style.opacity = "0";
+                                                    }
+                                                })
 
                                                                         // </script>
     </body>
