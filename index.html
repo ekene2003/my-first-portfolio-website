@@ -11,6 +11,11 @@
         <link rel="stylesheet" href="./assets/css/myportfolio.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Cinzel:wght@400;600&family=Edu+TAS+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Exo:wght@300&family=Lobster&family=Monoton&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto+Slab:wght@100;300&family=Silkscreen&display=swap"
+            rel="stylesheet">
         <link
             href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel&family=Edu+TAS+Beginner&family=Exo:wght@300&family=Roboto+Slab:wght@300&display=swap"
             rel="stylesheet">
@@ -30,6 +35,7 @@
             href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Cinzel:wght@400;600&family=Edu+TAS+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Exo:wght@300&family=Lobster&family=Monoton&family=Press+Start+2P&family=Roboto+Slab:wght@300&family=Silkscreen&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://res.cloudinary.com/dvznglupe/image/upload/cld-sample.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     </head>
 
     <body>
@@ -37,50 +43,45 @@
             <a href="" class="brand-details">
                 <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1675120365/my%20work/IMG_9630_dvnjfa.jpg" alt=""
                     class="brand-logo">
+
                 <h2 class="nav-logo">EKENESZN</h2>
             </a>
             <nav class="the-nav">
                 <ul class="nav-list">
                     <a href="#home">
-                        <li>HOME</li>
+                        <li class="nav-links active-link">HOME</li>
                     </a>
                     <a href="#skills">
-                        <li>SKILLS</li>
+                        <li class="nav-links">SKILLS</li>
                     </a>
                     <a href="#projects">
-                        <li>PROJECTS
-                            <ul class="project-list">
-                                <a href="#beginner">
-                                    <li>Beginner</li>
-                                </a>
-                                <a href="#intermediate">
-                                    <li>intermediate</li>
-                                </a>
-                                <a href="#advanced">
-                                    <li>advanced</li>
-                                </a>
-                            </ul>
+                        <li class="nav-links">PROJECTS
                         </li>
                     </a>
                     <a href="#socials">
-                        <li>SOCIALS</li>
+                        <li class="nav-links">SOCIALS</li>
+                        <ul class="social">
+                        </ul>
                     </a>
-                    <a href="./youclicked.html"><button class="more-info" type="submit">More Info</button>
+                    <button class="theme"><i class="fa fa-tools"></i>
+                    </button>
                 </ul>
-
+                <div class="theme-list">
+                    <div class="dark-mode">Dark Mode <i class="fa fa-moon"></i></div>
+                    <div class="light-mode current">Light Mode <i class="fa fa-sun"></i></div>
+                    </div>
             </nav>
             </a>
             <button class="nav-icon"><i class="fa fa-bars"></i></button>
             <button class="nav-icon2"><i class="fa fa-x"></i></button>
         </header>
         <main class="main-body">
-            <section class="section1" id="home">
+            <section class="section1 animate__animated animate__backInRight" id="home">
                 <div class="bio-sides">
-                    <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665007184/mandem2_lixxcl.jpg" class="bio-img" alt="">
                     <aside class="bio-info">
-                        <h2 class="bio-tittle">About Ekene</h2>
-                        <p class="bio-desc">My name is Ekenedirichukwu favour Azubuogu.i'm a front end
-                            developer,
+                        <p class="bio-desc"><span class="hello-part">Hello, My name is</span> <span class="my-name">Ekenedirichukwu favour
+                                Azubuogu.</span> <br> i'm a <span style="color: tomato;">frontend
+                                developer</span> based in nigeria
                             and
                             you're
                             welcome to my space on the internet. I'm a boy with the mission to become a good software
@@ -92,18 +93,21 @@
                             <a href="https://www.twitter.com/FAzubuogu" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.facebook.com/ekenefavour" target="_blank"><i class="fab fa-facebook"></i></a>
                             <a href="https://www.instagram.com/_.ekene" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/ekene2003" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </aside>
+                    <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665007184/mandem2_lixxcl.jpg" class="bio-img" alt="">
                 </div>
-
             </section>
+            <hr>
             <section class="skill-section" id="skills">
                 <div class="skill-head">
-                    <h1 class="skill-tittle">My Skills</h1>
+                    <h1 class="skill-tittle">Skills</h1>
+                    <p class="skills-paragraph">What I can do..</p>
                     <div class="skills">
                         <div class="skill-box"><img src="https://img.icons8.com/color/48/null/bootstrap.png" />
                             <div class="side">
-                                <h4>Bootstrap</h4>
+                                <h4 class="skill-box-tittle">Bootstrap</h4>
                                 <p>
                                     with the aid of bootstrap, I create fast and dynamic websites.</p>
                             </div>
@@ -111,14 +115,14 @@
                         <div class="skill-box">
                             <img src="https://img.icons8.com/windows/32/null/github.png" />
                             <div class="side">
-                                <h4>Github</h4>
+                                <h4 class="skill-box-tittle">Github</h4>
                                 <p>I use my github effectively and i maintain my streak daily.</p>
                             </div>
 
                         </div>
                         <div class="skill-box"><img src="https://img.icons8.com/color/48/null/javascript--v1.png" />
                             <div class="side">
-                                <h4>Javascript</h4>
+                                <h4 class="skill-box-tittle">Javascript</h4>
                                 <p>I possess some skills in Javascript and React.</p>
                             </div>
                         </div>
@@ -126,95 +130,143 @@
                     <div class="skill-two">
                         <div class="skill-box"><img src="https://img.icons8.com/color/48/null/css3.png" />
                             <div class="side">
-                                <h4>Css</h4>
+                                <h4 class="skill-box-tittle">Css</h4>
                                 <p>I have a good knowledge of css and the properties it comes with.</p>
                             </div>
                         </div>
                         <div class="skill-box"><img src="https://img.icons8.com/color/48/null/html-5--v1.png" />
                             <div class="side">
-                                <h4>Html</h4>
+                                <h4 class="skill-box-tittle">Html</h4>
                                 <p>Skillfull with my html and well equiped to get any task done.</p>
                             </div>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </section>
             <section class="project-section" id="projects">
                 <div class="project-head">
-                    <h1 class="project-tittle">MY PROJECTS</h1>
-                    <p class="project-desc">These are the the few projects i've been able to run.</p>
+                    <h1 class="project-tittle">My Projects</h1>
+                    <p class="project-desc">These are the few projects i've done so far.</p>
                 </div>
-                <div class="project-category">
-                    <span><button class="project-btn" data-category="All">All</button></span>
-                    <span><button class="project-btn" data-category="Beginners">Beginner</button></span>
-                    <span><button class="project-btn" data-category="intermediate">intermediate</button></span>
-                    <span><button class="project-btn" data-category="advanced">advanced</button></span>
-                </div>
-                <div class="allprojectcards">
-                    <div class="project-cards" data-type="intermediate">
-                        <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1667000972/mynewlook_mgco8x.png" alt="">
-                        <div class="web1">
-                            <a href="https://ekenesportfoliopage.netlify.app/" target="_blank"><button>View</button></a>
+                <div class="project-wrap">
+                    <div class="project-category">
+                        <span><button class="project-btn active" data-category="All">All</button></span>
+                        <span><button class="project-btn" data-category="Beginners">Beginner</button></span>
+                        <span><button class="project-btn" data-category="intermediate">Intermediate</button></span>
+                        <span><button class="project-btn" data-category="advanced">Advanced</button></span>
+                    </div>
+                    <div class="allprojectcards">
+                        <div class="project-cards" data-type="intermediate">
+                            <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1667000972/mynewlook_mgco8x.png" alt="">
+                            <div class="web1">
+                                <h2 class="project-card-tittle">Ekeneszn</h2>
+                                <p>Ekeneszn is my portfolio website which was made with html, css and javascript. This
+                                    website contains details about
+                                    me, my skills, my resume and the projects i've been able to complete so far.</p>
+                                <a href="https://ekenesportfoliopage.netlify.app/" target="_blank"><button class="visit-btn">Visit
+                                        site</button></a>
                             </div>
+                        </div>
+                        <div class="project-cards" data-type="advanced">
+                            <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008625/secondproject_gcfkmz.jpg" alt="">
+                            <div class="web1">
+                                <h2 class="project-card-tittle">Cube</h2>
+                                <p>Cube is a commercial website which i made to improve my coding skills. This was built
+                                    using bootstrap and other
+                                    external components like google fonts.</p>
+                                <a href="https://cubeii.netlify.app" target="_blank"><button class="visit-btn">Visit
+                                        site</button></a>
                             </div>
-                            <div class="project-cards" data-type="advanced">
-                        <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008625/secondproject_gcfkmz.jpg" alt="">
-                        <div class="web1">
-                            <a href="https://cubeii.netlify.app" target="_blank"><button>View</button></a>
+                        </div>
+                        <div class="project-cards" data-type="advanced">
+                            <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008662/firstprojectpic_diiqar.jpg" alt="">
+                            <div class="web1">
+                                <h2 class="project-card-tittle">Cube-II</h2>
+                                <p>This is my second cube project and it is also a commercial website which i made to
+                                    improve my coding skills. </p>
+                                <a href="https://cubeproject1.netlify.app" target="_blank"><button class="visit-btn">Visit site</button></a>
                             </div>
+                        </div>
+                        <div class="project-cards" data-type="intermediate">
+                            <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008698/intermediate_vwow9s.png" alt="">
+                            <div class="web1">
+                                <h2 class="project-card-tittle">Portfolio Template</h2>
+                                <p>I made this website as a template for my portfolio website(Ekeneszn) making this
+                                    website involved javascript. Which i
+                                    used to differentiate my projects. The begginer, intermediate and the advanced.</p>
+                                <a href="https://niitdemo.netlify.app" target="_blank"><button class="visit-btn">Visit
+                                        site</button></a>
                             </div>
-                            <div class="project-cards" data-type="advanced">
-                        <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008662/firstprojectpic_diiqar.jpg" alt="">
-                        <div class="web1">
-                            <a href="https://cubeproject1.netlify.app" target="_blank"><button>View</button></a>
+                        </div>
+                        <div class="project-cards" data-type="Beginners">
+                            <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008638/begginers2.jpg_www3lm.png" alt="">
+                            <div class="web1">
+                                <h2 class="project-card-tittle">Timer- Js project</h2>
+                                <p>The timer is my first javascript project and it was made with alot of javascript
+                                    functions like onclick,setinterval
+                                    and other js properties. It has an increment button which increases the number
+                                    indicated in the form and also a
+                                    decrement button which reduces the number specified.</p>
+                                <a href="https://incrementbtn.netlify.app" target="_blank"><button class="visit-btn">Visit
+                                        site</button></a>
                             </div>
-                            </div>
-                            <div class="project-cards" data-type="intermediate">
-                        <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008698/intermediate_vwow9s.png" alt="">
-                        <div class="web1">
-                            <a href="https://niitdemo.netlify.app" target="_blank"><button>View</button></a>
-                            </div>
-                            </div>
-                            <div class="project-cards" data-type="Beginners">
-                        <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008638/begginers2.jpg_www3lm.png" alt="">
-                        <div class="web1">
-                            <a href="https://incrementbtn.netlify.app" target="_blank"><button>View</button></a>
-                            </div>
-                            </div>
-                    <div class="project-cards" data-type="Beginners">
-                        <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008647/begginers.jpg_idikkl.png" alt="">
-                        <div class="web1">
-                            <a href="https://waec.netlify.app" target="_blank"><button>View</button></a>
+                        </div>
+                        <div class="project-cards" data-type="Beginners">
+                            <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008647/begginers.jpg_idikkl.png" alt="">
+                            <div class="web1">
+                                <h2 class="project-card-tittle">Cummulative Table - Js project </h2>
+                                <p>This is my second javascript project which collects the name of the students, the
+                                    subjects they offered and the
+                                    scores the got in each subject and displays all the data in a table containing the
+                                    Cummulative score of each
+                                    student. </p>
+
+                                <a href="https://waec.netlify.app" target="_blank"><button class="visit-btn">Visit
+                                        site</button></a>
+                                </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <hr>
+            <div class="location-section">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1009058.2697684502!2d6.690075749399994!3d8.913588655654845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e6157ce3eeda9%3A0x32af1c368be32dfc!2sFederal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1675808080215!5m2!1sen!2sng"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <footer class="socials" id="socials">
                 <div class="social-head">
-                    <h2>EKENESZN</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur ang elit. <br> Numquam eveniet quam ipsam?</p>
+                    <h1 class="get-in-touch">GET IN TOUCH</h1>
+                    <p>Ekeneszn making your vision a reality.</p>
                 </div>
                 <div class="social-sec">
-                    <h3>CONTACTS</h3>
+                    <h3 class="footer-end">Contacts</h3>
                     <div class="contacts">
-                        <a href="tel:+o8120842274"><i class="fa fa-phone"></i>Call Me</a>
-                        <a href="mailto:azubuogufavour1@gmail.com"><i class="fa fa-envelope"></i>My Mail</a>
-                        <a href=""><i class="fa fa-globe"></i>More Projects</a>
+                        <a class="footer-links" href="tel:+o8120842274">Call Me</a>
+                        <a class="footer-links" href="mailto:azubuogufavour1@gmail.com">My Mail</a>
                     </div>
                 </div>
                 <div class="social">
-                    <h3>SOCIALS</h3>
+                    <h3 class="footer-end">Socials</h3>
                     <div class="social-med">
-                        <a href="https://www.whatsap.com/08120842274" target="_blank"><i class="fab fa-whatsapp"></i>Whatsapp</a>
-                        <a href="https://www.facebook.com/ekenefavour" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
-                        <a href="https://www.twitter.com/FAzubuogu" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-                        <a href="https://www.instagram.com/_.ekene" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+                        <a class="footer-links" href="https://www.whatsap.com/08120842274" target="_blank">Whatsapp</a>
+                        <a class="footer-links" href="https://www.facebook.com/ekenefavour" target="_blank">Facebook</a>
+                        <a class="footer-links" href="https://www.twitter.com/FAzubuogu" target="_blank">Twitter</a>
+                        <a class="footer-links" href="https://www.instagram.com/_.ekene" target="_blank">Instagram</a>
                     </div>
                     <small>&copy;2022, portfolio | ekeneszn. All rights reserved</small>
 
                 </div>
+                <div class="small-info">
+                    <h4 class="footer-end">phone:</h4>
+                    <p class="footer-links">+(234)8120842274</p>
+                    <h4 class="footer-end">Email address:</h4>
+                    <p class="footer-links">Azubuogufavour1@gmail.com</p>
+                    <h4 class="footer-end">Home address:</h4>
+                    <p class="footer-links">Suit A45/5 Pegi Estate, Abuja, Nigeria.</p>
+                    <a href="#home"><button class="scroll"><i class="fa fa-chevron-up"></i></button></a>
 
+                </div>
             </footer>
         </main>
 
@@ -222,10 +274,152 @@
         <script>
                 const singleElem = (element) => document.querySelector(element);
                 const multiElem = (elements) => document.querySelectorAll(elements);
+                                                let mainBody = singleElem(".main-body")
+                                                let allNavLinks = multiElem(".nav-links");
                 let allProjectBtns = multiElem(".project-btn");
                 let allProjectCards = multiElem(".project-cards");
+                                                let navLogo = singleElem(".nav-logo");
+                                                let themeBtn = singleElem(".theme");
+                                                let themes = singleElem(".theme-list");
+                                                let lightBtn = singleElem(".light-mode");
+                                                let DarkBtn = singleElem(".dark-mode");
+                                                let nav = singleElem('.the-nav');
+                                                let header = singleElem('.my-header');
+                                                let list = singleElem('.nav-list')
+                                                let skillSection = singleElem(".skill-section");
+                                                let projectSection = singleElem(".project-section");
+                                                let bioSection = singleElem(".section1");
+                                                let greeting = singleElem(".my-name");
+                                                let greetingTwo = singleElem(".hello-part");
+                                                let skillHead = singleElem(".skill-tittle");
+                                                let projectHead = singleElem(".project-tittle");
+                                                let skillBox = multiElem(".skill-box");
+                                                let visitBtn = multiElem(".visit-btn");
+                                                let skillBoxtittles = multiElem(".skill-box-tittle");
+                                                let projectcardtittles = multiElem(".project-card-tittle");
+                                                let getInTouch = singleElem(".get-in-touch");
+                                                let footerTittles = multiElem(".footer-end");
+                                                let footerLink = multiElem(".footer-links");
+                                                const navBar = singleElem(".the-nav");
+                                                const navIcon = singleElem(".nav-icon");
+                                                const closebar = singleElem(".nav-icon2");
+                                                DarkBtn.onclick = () => {
+                                                    lightBtn.className = "light-mode";
+                                                    DarkBtn.classList.add("current");
+                                                    themes.style.background = "grey ";
+                                                    mainBody.style.background = "#202020";
+                                                    header.style.background = "#202020";
+                                                    allNavLinks.forEach(link => {
+                                                        link.style.color = "white";
+                                                    });
+                                                    bioSection.style.background = "#202020";
+                                                    skillSection.style.background = "grey";
+                                                    greeting.style.color = "white";
+                                                    greetingTwo.style.color = "white";
+                                                    navLogo.style.color = "white";
+                                                    skillBox.forEach(box => {
+                                                        // box.style.background = "#202023";
+                                                        box.classList.add("dark-skill-box")
+                                                    });
+                                                    skillBoxtittles.forEach(tittle => {
+                                                        tittle.style.color = "white";
+                                                    });
+                                                    skillHead.style.color = "white"
+                                                    projectHead.style.color = "white"
+                                                    allProjectBtns.forEach(btn => {
+                                                        btn.classList.add("dark-project-btn");
+                                                    });
+                                                    projectcardtittles.forEach(protitle => {
+                                                        protitle.style.color = "white";
+                                                    });
+                                                    visitBtn.forEach(visit => {
+                                                        visit.style.color = "white";
+                                                    });
+                                                    getInTouch.style.color = "white";
+                                                    footerTittles.forEach(footer => {
+                                                        footer.style.color = "white";
+                                                    });
+                                                    footerLink.forEach(link => {
+                                                        link.style.color = "grey"
+                                                    });
+                                                    navBar.style.background = "#202020";
+                                                    navIcon.style.background = "#202020";
+                                                    closebar.style.background = "#202020";
+                                                    navIcon.style.color = "white";
+                                                    closebar.style.color = "white";
+                                                    navIcon.style.border = "2px solid white";
+                                                    closebar.style.border = "2px solid white";
+                                                };
+                                                lightBtn.onclick = () => {
+                                                    DarkBtn.className = "dark-mode";
+                                                    lightBtn.classList.add("current");
+                                                    navBar.style.background = "white";
+                                                    navIcon.style.background = "white";
+                                                    closebar.style.background = "white";
+                                                    navIcon.style.color = "black";
+                                                    closebar.style.color = "black";
+                                                    navIcon.style.border = "2px solid black";
+                                                    closebar.style.border = "2px solid black";
+                                                    themes.style.background = "lightgrey";
+                                                    mainBody.style.background = "white";
+                                                    header.style.background = "white";
+                                                    allNavLinks.forEach(link => {
+                                                        link.style.color = "black";
+                                                    });
+                                                    bioSection.style.background = "white";
+                                                    skillSection.style.background = "lightgray";
+                                                    greeting.style.color = "black";
+                                                    greetingTwo.style.color = "black";
+                                                    navLogo.style.color = "black";
+                                                    skillBox.forEach(box => {
+                                                        box.className = "skill-box";
+                                                    });
+                                                    skillBoxtittles.forEach(tittle => {
+                                                        tittle.style.color = "black";
+                                                    });
+                                                    skillHead.style.color = "black"
+                                                    projectHead.style.color = "black"
+                                                    allProjectBtns.forEach(btn => {
+                                                        btn.className = "project-btn"
+                                                    });
+                                                    projectcardtittles.forEach(protitle => {
+                                                        protitle.style.color = "black";
+                                                    });
+                                                    visitBtn.forEach(visit => {
+                                                        visit.style.color = "grey";
+                                                    });
+                                                    getInTouch.style.color = "black";
+                                                    footerTittles.forEach(footer => {
+                                                        footer.style.color = "grey";
+                                                    });
+                                                    footerLink.forEach(link => {
+                                                        link.style.color = "black"
+                                                    });
+                                                }
+                                                i = 0;
+                                                themeBtn.onclick = () => {
+                                                    i++;
+                                                    if (i % 2 == 0) {
+                                                        themes.style.display = "none";
+                                                    }
+                                                    else {
+                                                        themes.style.display = "block";
+                                                    }
+                                                }
+                                                allNavLinks.forEach(link => {
+                                                    link.onclick = function () {
+                                                        allNavLinks.forEach(link => {
+                                                            link.classList.remove("active-link");
+                                                            this.classList.add("active-link");
+                                                        })
+                                                    }
+                                                })
                 allProjectBtns.forEach(projectBtn => {
                     projectBtn.onclick = function (e) {
+                        allProjectBtns.forEach(btn => {
+                            btn.classList.remove("active");
+                            this.classList.add("active");
+                        })
                         // e.preventDefault();
                         let category = projectBtn.dataset.category;
                         for (let i of allProjectCards) {
@@ -235,20 +429,15 @@
                             else {
                             if (i.dataset.type !== category) {
                                 i.style.display = "none";
-
                             }
                             else {
                                 i.style.display = "block";
-
                             }
                         }
 
                     }
                 };
-            });
-                        const navBar = singleElem(".the-nav");
-                        const navIcon = singleElem(".nav-icon");
-                const closebar = singleElem(".nav-icon2");
+                });
                 navIcon.addEventListener("click", function (e) {
                 // navIcon.classList.toggle("when-click");
                 closebar.style.display = "block";
@@ -260,12 +449,9 @@
                         closebar.style.display = "none";
                         navBar.classList.toggle("show-nav");
                     })
-                    window.addEventListener('scroll', function () {
-                        let nav = singleElem('.the-nav');
-                        let header = singleElem('.my-header');
-                        let list = singleElem('.nav-list')
-
-                if (window.scrollY >= 50) {
+                                                window.addEventListener('scroll', function () {
+                // console.log(window.scrollY);
+                        if (window.scrollY > 50) {
                     header.classList.add('active-header');
                     nav.classList.add('new-nav');
                     navIcon.classList.add('new-icon');
@@ -274,9 +460,37 @@
                     header.classList.remove('active-header');
                     nav.classList.remove('new-nav');
                     navIcon.classList.remove('new-icon');
-                }
+                        }
+                // if (window.scrollY >= 390) {
+                //     skillSection.style.transition = "all 1s ease-in";
+                //     skillSection.style.opacity = "1";
+                // }
+                // else {
+                //     skillSection.style.opacity = "0";
+                // }
+                //         if (window.scrollY >= 1120) {
+                //             projectSection.style.transition = "all 2s ease-in-out";
+                //             projectSection.style.opacity = "1";
+                //             projectSection.classList.add("moves");
+                //             skillSection.style.opacity = "0";
+                //         }
+                //         else {
+                //             projectSection.style.opacity = "0";
+                // }
             })
-        </script>
+                                                                        //font-family: 'Bangers', cursive;
+                                                                        //font-family: 'Cinzel', serif;
+                                                                        //font-family: 'Edu TAS Beginner', cursive;
+                                                                        //font-family: 'Edu VIC WA NT Beginner', cursive;
+                                                                        //font-family: 'Exo', sans - serif;
+                                                                        //font-family: 'Lobster', cursive;
+                                                                        //font-family: 'Monoton', cursive;
+                                                                        //font-family: 'Press Start 2P', cursive;
+                                                                        //font-family: 'Roboto Slab', serif;
+                                                                        //font-family: 'Silkscreen', cursive;
+                                                                    // font - family: 'Amatic SC', cursive;
+
+                                                                        // </script>
     </body>
 
 </html>
