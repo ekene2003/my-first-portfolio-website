@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Cinzel:wght@400;600&family=Edu+TAS+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Exo:wght@300&family=Lobster&family=Monoton&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto+Slab:wght@100;300&family=Silkscreen&display=swap"
             rel="stylesheet">
@@ -69,7 +69,7 @@
                 <div class="theme-list">
                     <div class="dark-mode">Dark Mode <i class="fa fa-moon"></i></div>
                     <div class="light-mode current">Light Mode <i class="fa fa-sun"></i></div>
-                    </div>
+                </div>
             </nav>
             </a>
             <button class="nav-icon"><i class="fa fa-bars"></i></button>
@@ -94,8 +94,8 @@
                             <a href="https://www.facebook.com/ekenefavour" target="_blank"><i class="fab fa-facebook"></i></a>
                             <a href="https://www.instagram.com/_.ekene" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a href="https://github.com/ekene2003" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/azubuogu-favour-316a55266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BV%2BYojIAHTU2conxGuOy6aw%3D%3D"
-                                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/azubuogu-favour-316a55266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BV%2BYojIAHTU2conxGuOy6aw%3D%3D"
+                                target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </aside>
                     <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665007184/mandem2_lixxcl.jpg" class="bio-img" alt="">
@@ -217,21 +217,23 @@
                             <img src="https://res.cloudinary.com/dvznglupe/image/upload/v1665008647/begginers.jpg_idikkl.png" alt="">
                             <div class="web1">
                                 <h2 class="project-card-tittle">Cummulative Table - Js project </h2>
-                                <p>This is my second javascript project which calculates the cummulative score of students. </p>
+                                <p>This is my second javascript project which calculates the cummulative score of
+                                    students. </p>
                                 <a href="https://waec.netlify.app" target="_blank"><button class="visit-btn">Visit
                                         site</button></a>
-                                </div>
-                        </div>
-                            <div class="project-cards" data-type="Beginners">
-                                <img src="./assets/images/jscalculator.png" alt="">
-                                <div class="web1">
-                                    <h2 class="project-card-tittle">Calculator - Js project </h2>
-                                    <p>This was a Javascript project i made during my learning of javascript. I made a Calculator with javascript.
-                                    </p>
-                                    <a href="https://ekenescalculatorwithjs.netlify.app/" target="_blank"><button class="visit-btn">Visit
-                                            site</button></a>
-                                </div>
                             </div>
+                        </div>
+                        <div class="project-cards" data-type="Beginners">
+                            <img src="./assets/images/jscalculator.png" alt="">
+                            <div class="web1">
+                                <h2 class="project-card-tittle">Calculator - Js project </h2>
+                                <p>This was a Javascript project i made during my learning of javascript. I made a
+                                    Calculator with javascript.
+                                </p>
+                                <a href="https://ekenescalculatorwithjs.netlify.app/" target="_blank"><button class="visit-btn">Visit
+                                        site</button></a>
+                                </div>
+                                </div>
                     </div>
                 </div>
             </section>
@@ -469,20 +471,25 @@
                     navIcon.classList.remove('new-icon');
                         }
                                                     if (window.scrollY >= 370) {
-                                                        skillSection.style.transition = "all 1s ease-in";
+                                                        skillSection.style.transition = "all 2s ease-in 2ms";
                                                         skillSection.style.opacity = "1";
+                                                        skillSection.style.right = "0";
                                                     }
                                                     else {
                                                         skillSection.style.opacity = "0";
+                                                        skillSection.style.right = "9rem";
                                                     }
                                                     if (window.scrollY >= 1320) {
-                                                        projectSection.style.transition = "all 2s ease-in-out";
+                                                        projectSection.style.transition = "all 2s ease-in-out 2ms";
+                                                        projectSection.style.right = "0";
                                                         projectSection.style.opacity = "1";
                                                         projectSection.classList.add("moves");
                                                         skillSection.style.opacity = "0";
                                                     }
                                                     else {
                                                         projectSection.style.opacity = "0";
+                                                        projectSection.style.right = "6rem";
+
                                                     }
                                                 })
 
