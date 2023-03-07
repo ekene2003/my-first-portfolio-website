@@ -140,7 +140,7 @@ div.current{
     z-index: 3;
   }
   section.section1 {
-    padding:3rem 3rem ;
+    padding:2.5rem 3rem ;
   }
   div.bio-sides {
     display: flex;
@@ -150,7 +150,7 @@ div.current{
   }
   span.my-name{
     font-size: 3.4rem;
-    line-height: 3.4rem;
+    line-height: 3.7rem;
     font-family: 'Roboto Slab', serif;
 color: #000;
   }
@@ -183,7 +183,7 @@ color: #000;
     font-family: Source Sans Pro,sans-serif;
   }
   div.bio-socials {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     display: flex;
     gap: 1.5rem;
   }
@@ -234,12 +234,12 @@ margin-bottom: 1.5rem;
     justify-content: center;
   }
   div.skill-box {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 15rem;
+    height: auto;
     width: 30%;
     border: 1px solid #EFEFEF;
     font-family: Source Sans Pro,sans-serif;
@@ -268,8 +268,6 @@ margin-bottom: 1.5rem;
     width: 4rem;
     height: 4rem;
     margin-right: 1rem;
-    position: relative;
-    top:-20%;
   }
   section.project-section {
     padding:3rem 2rem ;
@@ -355,6 +353,16 @@ div.project-cards:hover{
   color: grey;
   font-size: medium;
   line-height: 1.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  
+  }
+    small.read-more{
+    font-family: Source Sans Pro,sans-serif;
+
   }
     div.web1 button{
     font-family: 'Roboto Slab', serif;
@@ -612,7 +620,7 @@ color: black;
   }
     span.my-name{
     font-size: 2.4rem;
-    line-height: 2.4rem;
+    line-height: 3rem;
     font-family: 'Roboto Slab', serif;
 color: #000;
   }
@@ -689,6 +697,7 @@ margin-bottom: 1.5rem;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
+    align-items: stretch;
   }
   div.skill-two {
     margin-top: 1rem;
@@ -696,6 +705,7 @@ margin-bottom: 1.5rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
+    align-items: stretch;
   }
   div.skill-box {
     padding: 2rem;
@@ -703,7 +713,7 @@ margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 26vh;
+    height: auto;
     width: 100%;
     border: 1px solid #EFEFEF;
     box-shadow: 2px 3px 5px 2px grey;
@@ -784,14 +794,14 @@ gap: .6rem;
   }
   div.project-cards img {
     width: 100%;
-    height: 50%;
+    height: 60%;
     z-index: 2;
   border-bottom : 2px solid black;
+  object-fit: fill;
   }
   div.web1 {
   padding: .4rem 1rem;
   }
-
     div.web1 h2{
     font-family: 'Roboto Slab', serif;
    margin-bottom: .2rem;
@@ -801,6 +811,15 @@ gap: .6rem;
   color: grey;
   font-size: medium;
   margin-bottom: .4rem;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  }
+  small.read-more{
+    font-family: Source Sans Pro,sans-serif;
+
   }
     div.web1 button{
     font-family: 'Roboto Slab', serif;
