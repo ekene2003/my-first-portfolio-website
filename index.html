@@ -84,10 +84,10 @@
                                 developer</span> based in nigeria
                             and
                             you're
-                            welcome to my space on the internet. I'm a boy with the mission to become a good software
-                            engineer
-                            and
-                            i'm highly prepared to overcome any task that comes my way.</p>
+                            welcome to my space on the internet. As a <span style="color: tomato;">front-end</span> website developer with over
+                            2years of experience, I have the
+                            necessary skills needed from a <span style="color: tomato;">front-end</span> web
+                            developer, which includes: HTML, CSS, JAVASCRIPT. </p>
                         <div class="bio-socials">
                             <a href="https://www.whatsapp.com/08120842274" target="_blank"><i class="fab fa-whatsapp"></i></a>
                             <a href="https://www.twitter.com/FAzubuogu" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -349,8 +349,9 @@
                                                         readBtn.forEach(btn => {
                                                             btn.onclick = () => {
                                                                 btn.style.opacity = "0";
-                                                                para.style.overflow = "visible";
-
+                                                                let currentPara = btn.closest(".project-cards").querySelector(".project-p");
+                                                                currentPara.style.overflow = "visible";
+                                                                currentPara.style.display = "block";
                                                             }
                                                         });
                                                 DarkBtn.onclick = () => {
