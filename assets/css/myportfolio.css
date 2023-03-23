@@ -209,13 +209,12 @@ color: #000;
   section.skill-section {
     padding:3rem 3rem ;
     background: #EAEAEA;
-opacity: 0;
-transition: all .3s ease-in;
 position: relative;
   }
   h1.skill-tittle { 
     font-family: 'Roboto Slab', serif;
     color: black;
+    position: relative;
     /* margin-bottom: 2rem; */
   }
   p.skills-paragraph{
@@ -247,6 +246,7 @@ margin-bottom: 1.5rem;
     font-family: Source Sans Pro,sans-serif;
      color: grey;
     font-weight: 500;
+    position: relative;
   }
   div.dark-skill-box{
     background: #202023 !important;
