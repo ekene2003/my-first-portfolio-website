@@ -192,34 +192,5 @@ window.addEventListener("scroll", function () {
     nav.classList.remove("new-nav");
     navIcon.classList.remove("new-icon");
   }
-  // if (window.scrollY >= 370) {
-  //   skillSection.style.transition = "all 1.5s ease-in";
-  //   // skillSection.style.opacity = "1";
-  //   // skillSection.style.right = "0";
-  //   skillHead.style.right = "0";
-  //   skillBox.forEach((box) => {
-  //     box.style.transition = "all 1.5s ease-in";
-  //     box.style.opacity = "1";
-  //     box.style.top = "0";
-  //   });
-  // } else {
-  //   // skillSection.style.opacity = "0";
-  //   // skillSection.style.right = "6rem";
-  //   skillHead.style.right = "8rem";
-  //   skillBox.forEach((box) => {
-  //     box.style.transition = "all 1s ease-in-out";
-  //     box.style.opacity = "0";
-  //     box.style.top = "6rem";
-  //   });
-  // }
-  // if (window.scrollY >= 1230) {
-  //   projectSection.style.transition = "all 1 s ease-in-out";
-  //   projectSection.style.right = "0";
-  //   projectSection.style.opacity = "1";
-  //   projectSection.classList.add("moves");
-  //   // skillSection.style.opacity = "0";
-  // } else {
-  //   projectSection.style.opacity = "0";
-  //   projectSection.style.right = "5rem";
-  // }
+
 });
