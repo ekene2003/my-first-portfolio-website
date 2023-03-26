@@ -31,6 +31,14 @@ const navIcon = singleElem(".nav-icon");
 const closebar = singleElem(".nav-icon2");
 let readBtn = multiElem(".read-more");
 let projectParagraph = multiElem(".project-p");
+let light = singleElem(".light");
+let dark = singleElem(".dark");
+let circle = singleElem(".circle");
+dark.onclick = () => {
+  console.log("yes");
+};
+
+
 readBtn.forEach((btn) => {
   btn.onclick = () => {
     btn.style.opacity = "0";
@@ -132,15 +140,15 @@ lightBtn.onclick = () => {
     link.style.color = "black";
   });
 };
-i = 0;
-themeBtn.onclick = () => {
-  i++;
-  if (i % 2 == 0) {
-    themes.style.display = "none";
-  } else {
-    themes.style.display = "block";
-  }
-};
+// i = 0;
+// themeBtn.onclick = () => {
+//   i++;
+//   if (i % 2 == 0) {
+//     themes.style.display = "none";
+//   } else {
+//     themes.style.display = "block";
+//   }
+// };
 allNavLinks.forEach((link) => {
   link.onclick = function () {
     allNavLinks.forEach((link) => {

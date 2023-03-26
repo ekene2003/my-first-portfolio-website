@@ -95,9 +95,9 @@ background:#ffffffee;
   button.nav-icon2 {
     display: none;
   }
-button.theme:hover{
+/* button.theme:hover{
   transform: scale(1.3);
-}
+} */
 ul.social{
   display: none;
 }
@@ -114,12 +114,26 @@ div.theme-list{
 }
 button.theme{
   padding: .4rem;
-  border-radius: 50%;
+  border-radius: 1rem;
   height: 2rem;
-  width: 2rem;
+  width: 4rem;
   cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly
 }
-div.dark-mode{
+svg.fa-circle{
+  height: 1.7rem;
+}
+svg.fa-sun{
+  height: 1rem;
+}
+svg.fa-moon{
+  height: 1rem;
+}
+
+/* div.dark-mode{
   color: #000;
     font-family: "Cinzel", serif;
 }
@@ -133,7 +147,7 @@ div.light-mode:hover{
 }
 div.dark-mode:hover{
   transform: scale(1.1);
-}
+} */
 div.current{
   color: tomato;
 }
