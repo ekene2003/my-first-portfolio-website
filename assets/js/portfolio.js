@@ -34,11 +34,6 @@ let projectParagraph = multiElem(".project-p");
 let light = singleElem(".light");
 let dark = singleElem(".dark");
 let circle = singleElem(".circle");
-dark.onclick = () => {
-  console.log("yes");
-};
-
-
 readBtn.forEach((btn) => {
   btn.onclick = () => {
     btn.style.opacity = "0";
@@ -47,10 +42,12 @@ readBtn.forEach((btn) => {
     currentPara.style.display = "block";
   };
 });
-DarkBtn.onclick = () => {
+dark.onclick = () => {
+  circle.style.left = "50%";
   lightBtn.className = "light-mode";
   DarkBtn.classList.add("current");
-  themes.style.background = "grey ";
+  themeBtn.style.border = "1px solid white";
+  // light.style.color = "white";
   mainBody.style.background = "#202020";
   header.style.background = "#202020";
   allNavLinks.forEach((link) => {
@@ -94,7 +91,8 @@ DarkBtn.onclick = () => {
   navIcon.style.border = "2px solid white";
   closebar.style.border = "2px solid white";
 };
-lightBtn.onclick = () => {
+light.onclick = () => {
+  circle.style.left = "12%";
   DarkBtn.className = "dark-mode";
   lightBtn.classList.add("current");
   navBar.style.background = "white";

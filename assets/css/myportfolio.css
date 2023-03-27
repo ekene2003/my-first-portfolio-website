@@ -101,53 +101,47 @@ background:#ffffffee;
 ul.social{
   display: none;
 }
-div.theme-list{
-  cursor: pointer;
-  position: absolute;
-  margin-top: .4rem;
-  right: 0;
-  background: rgba(200, 198, 198, 0.858);
-  padding: 0.5rem;
-  border-radius: .3rem;
-  display: none;
-  z-index: 999;
-}
 button.theme{
-  padding: .4rem;
+  padding: .2rem;
   border-radius: 1rem;
-  height: 2rem;
-  width: 4rem;
+  height: 1.9rem;
+  width: 4.4rem;
   cursor: pointer;
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  background-color: #c4c4c2 !important; 
 }
 svg.fa-circle{
-  height: 1.7rem;
+  height: 1.5rem;
+  color: white;
+  /* border: 2px solid black; */
+  box-shadow: 2px 2px 4px 1px black;
+  border-radius: 50%;
+z-index: 999;
 }
 svg.fa-sun{
   height: 1rem;
+  z-index: 1;
 }
 svg.fa-moon{
   height: 1rem;
-}
+z-index: 1;
 
-/* div.dark-mode{
-  color: #000;
-    font-family: "Cinzel", serif;
 }
-div.light-mode{
-  margin-top: .5rem;
-color: white;
-    font-family: "Cinzel", serif;
+div.circle{
+position: absolute;
+left: 12%;
+margin-left: .1rem;
 }
-div.light-mode:hover{
-  transform: scale(1.1);
+div.dark{
+  margin-right: .2rem;
 }
-div.dark-mode:hover{
-  transform: scale(1.1);
-} */
+div.light{
+  margin-left: .2rem;
+}
+ 
 div.current{
   color: tomato;
 }
@@ -592,38 +586,44 @@ background:#ffffffee;
     height: 3rem;
     width: 3rem;
   }
-  button.theme{
-  padding: .5rem;
-  border-radius: 2rem;
+button.theme{
+  padding: .2rem;
+  border-radius: 1rem;
+  height: 1.8rem;
+  width: 4.4rem;
+  cursor: pointer;
+  display: flex;
   position: relative;
-  background: rgba(163, 159, 159, 0.912);
-  margin-top: .6rem;
-  width: 5rem;
-height: 3rem;
-color: #000;
+  align-items: center;
+  justify-content: space-evenly
 }
-button.theme svg{
+svg.fa-circle{
   height: 1.5rem;
-  width: 2rem;
+  color: white;
+  /* border: 2px solid black; */
+  box-shadow: 2px 2px 4px 1px black;
+  border-radius: 50%;
+z-index: 999;
 }
-div.theme-list{
-  position: absolute;
-  margin-top: .4rem;
-  background: rgba(200, 198, 198, 0.858);
-  padding: 1rem;
-  border-radius: .3rem;
-  height: 6rem;
-  display: none;
-  z-index: 999;
+svg.fa-sun{
+  height: 1rem;
+  z-index: 1;
 }
-div.dark-mode{
-  color: #000;
-    font-family: "Cinzel", serif;
+svg.fa-moon{
+  height: 1rem;
+z-index: 1;
+
 }
-div.light-mode{
-  margin-top: 1rem;
-color: black;
-    font-family: "Cinzel", serif;
+div.circle{
+position: absolute;
+left: 12%;
+margin-left: .1rem;
+}
+div.dark{
+  margin-right: .2rem;
+}
+div.light{
+  margin-left: .2rem;
 }
   main.main-body {
     z-index: 3;
