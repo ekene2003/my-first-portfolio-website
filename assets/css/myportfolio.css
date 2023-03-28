@@ -124,10 +124,12 @@ z-index: 999;
 svg.fa-sun{
   height: 1rem;
   z-index: 1;
+  color: #000;
 }
 svg.fa-moon{
   height: 1rem;
 z-index: 1;
+  color: #000;
 
 }
 div.circle{
@@ -608,11 +610,12 @@ z-index: 999;
 svg.fa-sun{
   height: 1rem;
   z-index: 1;
+  color: #000;
 }
 svg.fa-moon{
   height: 1rem;
 z-index: 1;
-
+color: black;
 }
 div.circle{
 position: absolute;
